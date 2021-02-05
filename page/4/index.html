@@ -444,7 +444,7 @@
 <p><img src="/.com//deploy_error_05.png"></p>
 <p>如上， Permission denied(publickey)这就表示缺少公钥。</p>
 <p>——&gt;缺少公钥，所以要加一个公钥</p>
-<h1 id="Github-添加公钥-SSH-Keys"><a href="#Github-添加公钥-SSH-Keys" class="headerlink" title="Github 添加公钥 SSH Keys"></a>Github 添加公钥 SSH Keys</h1><h2 id="本地创建公钥-SSH-Keys："><a href="#本地创建公钥-SSH-Keys：" class="headerlink" title="本地创建公钥 SSH Keys："></a>本地创建公钥 SSH Keys：</h2><pre><code>ssh-keygen -t rsa -C &quot;sgvenday@outlook.com&quot;
+<h2 id="Github-添加公钥-SSH-Keys"><a href="#Github-添加公钥-SSH-Keys" class="headerlink" title="Github 添加公钥 SSH Keys"></a>Github 添加公钥 SSH Keys</h2><h3 id="本地创建公钥-SSH-Keys："><a href="#本地创建公钥-SSH-Keys：" class="headerlink" title="本地创建公钥 SSH Keys："></a>本地创建公钥 SSH Keys：</h3><pre><code>ssh-keygen -t rsa -C &quot;sgvenday@outlook.com&quot;
 </code></pre>
 <ul>
 <li><p>后面的邮箱即为 github 注册邮箱，也是你登录 Github 的邮箱</p>
@@ -456,7 +456,7 @@
 <li><p>成功的话会在 默认目录/下生成 .ssh文件夹，进去，打开 id_rsa.pub，复制里面的key即可</p>
 </li>
 </ul>
-<h2 id="Github仓库添加公钥-SSH-Keys："><a href="#Github仓库添加公钥-SSH-Keys：" class="headerlink" title="Github仓库添加公钥 SSH Keys："></a>Github仓库添加公钥 SSH Keys：</h2><pre><code>在你的git仓库/Settings/Deploy keys下
+<h3 id="Github仓库添加公钥-SSH-Keys："><a href="#Github仓库添加公钥-SSH-Keys：" class="headerlink" title="Github仓库添加公钥 SSH Keys："></a>Github仓库添加公钥 SSH Keys：</h3><pre><code>在你的git仓库/Settings/Deploy keys下
 打开id_rsa.pub，复制里面的key到github即可
 </code></pre>
 <p>如同所示：<br><img src="/.com//github_ssh_key_03.png"><br><img src="/.com//github_ssh_key_04.png"></p>
@@ -466,12 +466,27 @@
 <p><img src="/.com//github_ssh_key_05.png"></p>
 <p>最后公钥添加成功。可以再次尝试hexo deploy了。</p>
 <p>结果如图：成功deploy。<br><img src="/.com//deploy_suc.png"></p>
-<h1 id="hexo-deploy缓存问题"><a href="#hexo-deploy缓存问题" class="headerlink" title="hexo deploy缓存问题"></a>hexo deploy缓存问题</h1><pre><code>hexo deploy不知道是不是有缓存，几次deploy，线上都没有刷新
+<h2 id="hexo-deploy缓存问题"><a href="#hexo-deploy缓存问题" class="headerlink" title="hexo deploy缓存问题"></a>hexo deploy缓存问题</h2><pre><code>hexo deploy不知道是不是有缓存，几次deploy，线上都没有刷新
 </code></pre>
 <p>解决办法：</p>
 <pre><code>干脆一条命令搞定：
 hexo clean &amp;&amp; hexo g -d --config source/_data/next.yml
 </code></pre>
+<h2 id="换了电脑，hexo版本更新后，相关部署问题"><a href="#换了电脑，hexo版本更新后，相关部署问题" class="headerlink" title="换了电脑，hexo版本更新后，相关部署问题"></a>换了电脑，hexo版本更新后，相关部署问题</h2><h3 id="ERROR-Deployer-not-found-git"><a href="#ERROR-Deployer-not-found-git" class="headerlink" title="ERROR Deployer not found: git"></a>ERROR Deployer not found: git</h3><pre><code>npm install --save hexo-deployer-git
+
+即可。
+</code></pre>
+<h3 id="权限问题"><a href="#权限问题" class="headerlink" title="权限问题"></a>权限问题</h3><pre><code>The authenticity of host &#39;github.com (52.74.223.119)&#39; can&#39;t be established.
+RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added &#39;github.com,52.74.223.119&#39; (RSA) to the list of known    hosts.
+Connection reset by 52.74.223.119 port 22
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+</code></pre>
+<p>在github页面上 &gt; xxx.github.io &gt; Settings &gt; Deploy keys，发现没有公钥。参照之前的做法，在这台新电脑上创建公钥、密钥，然后github上添加这个新公钥。</p>
 
           
         
