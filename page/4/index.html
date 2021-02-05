@@ -1,0 +1,3194 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/page/4/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale">
+<meta property="article:author" content="谢军">
+<meta name="twitter:card" content="summary">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/page/4/"/>
+
+
+
+
+
+  <title>Hexo</title>
+  
+
+
+
+
+
+
+
+
+<meta name="generator" content="Hexo 5.3.0"></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left 
+  page-home">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Hexo</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+  <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/30/hexo-error/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="谢军">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/08/30/hexo-error/" itemprop="url">博客07/hexo/5.hexo-deploy问题解决</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-30T09:55:33+08:00">
+                2018-08-30
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%8D%9A%E5%AE%A2/" itemprop="url" rel="index">
+                    <span itemprop="name">博客</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/08/30/hexo-error/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/08/30/hexo-error/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2018/08/30/hexo-error/" class="leancloud_visitors" data-flag-title="博客07/hexo/5.hexo-deploy问题解决">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>参考: <a target="_blank" rel="noopener" href="https://blog.csdn.net/lvonve/article/details/79393511">https://blog.csdn.net/lvonve/article/details/79393511</a></p>
+<h1 id="hexo-deploy问题"><a href="#hexo-deploy问题" class="headerlink" title="hexo deploy问题"></a>hexo deploy问题</h1><p>1.在家另一台电脑上hexo deploy部署上传博客，遇到一个问题：</p>
+<p>fatal: could not read Username for ‘<a target="_blank" rel="noopener" href="https://github.com&/#39;">https://github.com&#39;</a>: No error</p>
+<p><img src="/.com//deploy_error_01.png"></p>
+<p>2.找到下面的解决方式：<br>_config.yml配置文件中将git的配置：</p>
+<pre><code>repo: https://github.com/sgven/sgven.github.io.git
+修改为repo: git@github.com:sgven/sgven.github.io.git
+</code></pre>
+<p><img src="/.com//deploy_error_02.png"></p>
+<p>3.改完之后再次部署 hexo d，还是错误，但是错误已经不同了：<br><img src="/.com//deploy_error_03.png"><br><img src="/.com//deploy_error_04.png"></p>
+<p>4.原因是没有在 Github 上添加公钥。<br>使用如下命令测试有没有公钥：</p>
+<pre><code>ssh -T git@github.com
+</code></pre>
+<p><img src="/.com//deploy_error_05.png"></p>
+<p>如上， Permission denied(publickey)这就表示缺少公钥。</p>
+<p>——&gt;缺少公钥，所以要加一个公钥</p>
+<h1 id="Github-添加公钥-SSH-Keys"><a href="#Github-添加公钥-SSH-Keys" class="headerlink" title="Github 添加公钥 SSH Keys"></a>Github 添加公钥 SSH Keys</h1><h2 id="本地创建公钥-SSH-Keys："><a href="#本地创建公钥-SSH-Keys：" class="headerlink" title="本地创建公钥 SSH Keys："></a>本地创建公钥 SSH Keys：</h2><pre><code>ssh-keygen -t rsa -C &quot;sgvenday@outlook.com&quot;
+</code></pre>
+<ul>
+<li><p>后面的邮箱即为 github 注册邮箱，也是你登录 Github 的邮箱</p>
+<p>  <img src="/.com//github_ssh_key_01.png"></p>
+</li>
+<li><p>之后会要求确认路径和输入密码，一路回车就行。</p>
+<p>  <img src="/.com//github_ssh_key_02.png"></p>
+</li>
+<li><p>成功的话会在 默认目录/下生成 .ssh文件夹，进去，打开 id_rsa.pub，复制里面的key即可</p>
+</li>
+</ul>
+<h2 id="Github仓库添加公钥-SSH-Keys："><a href="#Github仓库添加公钥-SSH-Keys：" class="headerlink" title="Github仓库添加公钥 SSH Keys："></a>Github仓库添加公钥 SSH Keys：</h2><pre><code>在你的git仓库/Settings/Deploy keys下
+打开id_rsa.pub，复制里面的key到github即可
+</code></pre>
+<p>如同所示：<br><img src="/.com//github_ssh_key_03.png"><br><img src="/.com//github_ssh_key_04.png"></p>
+<p>本地可以再测试下公钥有没有添加成功：</p>
+<pre><code>ssh -T git@github.com
+</code></pre>
+<p><img src="/.com//github_ssh_key_05.png"></p>
+<p>最后公钥添加成功。可以再次尝试hexo deploy了。</p>
+<p>结果如图：成功deploy。<br><img src="/.com//deploy_suc.png"></p>
+<h1 id="hexo-deploy缓存问题"><a href="#hexo-deploy缓存问题" class="headerlink" title="hexo deploy缓存问题"></a>hexo deploy缓存问题</h1><pre><code>hexo deploy不知道是不是有缓存，几次deploy，线上都没有刷新
+</code></pre>
+<p>解决办法：</p>
+<pre><code>干脆一条命令搞定：
+hexo clean &amp;&amp; hexo g -d --config source/_data/next.yml
+</code></pre>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/29/qiniu/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="谢军">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/08/29/qiniu/" itemprop="url">博客06/hexo/4.七牛图床</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-29T09:55:33+08:00">
+                2018-08-29
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%8D%9A%E5%AE%A2/" itemprop="url" rel="index">
+                    <span itemprop="name">博客</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/08/29/qiniu/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/08/29/qiniu/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2018/08/29/qiniu/" class="leancloud_visitors" data-flag-title="博客06/hexo/4.七牛图床">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="使用图床-Markdown语法引用图片"><a href="#使用图床-Markdown语法引用图片" class="headerlink" title="使用图床+Markdown语法引用图片"></a>使用图床+Markdown语法引用图片</h1><h2 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h2><ul>
+<li><p>1.首先要有个七牛账号，地址：<a target="_blank" rel="noopener" href="https://portal.qiniu.com/signup/choice">注册个人账户，认证</a></p>
+</li>
+<li><p>2.建立一个存储空间</p>
+<p><img src="/.com//qiniu_01.png"></p>
+</li>
+<li><p>3.设置镜像存储–镜像源————设置为源站域名，如github博客的域名</p>
+<pre><code>  https://sgven.github.io/
+</code></pre>
+<ul>
+<li>源站资源根据初次访问自动同步到七牛云存储，数据平滑迁移。<br><br>七牛镜像存储是一种数据迁移的方式，其回源源站数据也仅仅回源一次，成功抓取资源到七牛的空间之后，不再回源。</li>
+</ul>
+</li>
+</ul>
+<h2 id><a href="#" class="headerlink" title></a><img src="/.com//qiniu_02.png"></h2><ul>
+<li><p>4.绑定 加速域名</p>
+<ul>
+<li>自己注册购买域名，还需要买云服务器，备案后才能绑定</li>
+<li>要想长期使用七牛云图床服务的话，最好按规范绑定加速域名，虽然比较麻烦要花钱。<br><img src="/.com//qiniu_03.png"></li>
+</ul>
+</li>
+</ul>
+<h2 id="关于七牛作为图床的使用："><a href="#关于七牛作为图床的使用：" class="headerlink" title="关于七牛作为图床的使用："></a>关于七牛作为图床的使用：</h2><pre><code>- 1.使用即用七牛域名引用图片：
+引用的图片可以是手动上传到七牛存储空间的，也可以是从源站抓取的
+图片相对路径也对就好了，格式都是一样的。
+- 2.&lt;font color=&quot;red&quot;&gt;注意&lt;/font&gt;引用地址格式：&lt;/br&gt;
+七牛域名(七牛测试域名or绑定的自己的域名) + 图片的相对路径。
+</code></pre>
+<h2 id="使用七牛提供的测试域名，测试："><a href="#使用七牛提供的测试域名，测试：" class="headerlink" title="使用七牛提供的测试域名，测试："></a>使用七牛提供的测试域名，测试：</h2><pre><code>- 测试域名：pe7ckcu98.bkt.clouddn.com
+- 使用图床+Markdown语法，不需要安装插件：
+</code></pre>
+<p>1.引用已经手动上传到七牛存储空间的图片：</p>
+<pre><code>![](http://pe7ckcu98.bkt.clouddn.com/hexo/avatar_mini.png)
+</code></pre>
+<p>2.引用github博客上有的，而七牛存储空间没有<br><br>——七牛从源站抓取：（前提需要在七牛：镜像存储设置好 镜像源——即github博客域名）</p>
+<pre><code>![](http://pe7ckcu98.bkt.clouddn.com/2018/08/23/myblog/avatar_mini.png)
+</code></pre>
+<p>结果如图：</p>
+<pre><code>第一次成功从源站引用到图片，并且引用到的图片，存储到了七牛的存储空间
+</code></pre>
+<p><img src="/.com//qiniu_04.png"></p>
+<h2 id="注册域名，绑定域名到github博客（可忽略）："><a href="#注册域名，绑定域名到github博客（可忽略）：" class="headerlink" title="注册域名，绑定域名到github博客（可忽略）："></a>注册域名，绑定域名到github博客（可忽略）：</h2><ul>
+<li>1.在<a target="_blank" rel="noopener" href="https://www.dnspod.cn/console/dashboard">dnspot</a>注册域名，用最便宜的做些测试:</li>
+<li>2.添加要解析的地址<br><img src="/.com//domain_01.png"><br><img src="/.com//domain_02.png"></li>
+<li>3.ping github博客域名 获取ip地址<br><img src="/.com//domain_03.png"></li>
+</ul>
+<p>各种记录类型的<a target="_blank" rel="noopener" href="https://support.dnspod.cn/Kb/guide/">说明</a><br><img src="/.com//domain_04.png"></p>
+<p>到第三步自己的域名已经是能正常解析到github的地址了，但还不能访问博客网站内容，会显示404，还需要添加CNAME文件：</p>
+<ul>
+<li><p>4.添加CNAME文件</p>
+<ul>
+<li><p>在仓库根目录下添加一个CNAME文件——<font color="red">没有后缀名</font>，里面内容为你的域名(如:sgven.club),不需要添加http/www等前缀。</p>
+</li>
+<li><p>仓库根目录在本地hexo目录下——即为source根目录下</p>
+<p><img src="/.com//domain_05.png"></p>
+</li>
+</ul>
+</li>
+</ul>
+<p>此时，自己的域名能访问到博客仓库根目录下的index.html文件,正常显示内容了。同时输入原来的github博客域名，也会自动跳转为自己的域名。</p>
+<p><img src="/.com//domain_06.png"></p>
+<p>如果想长期使用七牛图床服务，就再买个便宜的云服务器备案吧。备案比较麻烦，也不想花钱就算了。</p>
+<p>经测试，同一张图片，七牛图床引用图片时间是us级，引用本地图片是ms级。</p>
+<p>而且线上是引用本地图片，打开博客感觉很耗时，决定全部替换为七牛图床引用，看看效果。</p>
+<p>云服务器：</p>
+<p><a target="_blank" rel="noopener" href="https://cloud.tencent.com/">腾讯云</a><br>，<a target="_blank" rel="noopener" href="https://www.aliyun.com/">阿里云</a>比较实惠，都有备案的步骤。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/24/hexo_writing/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="谢军">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/08/24/hexo_writing/" itemprop="url">博客05/hexo/3.写作</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-24T09:55:33+08:00">
+                2018-08-24
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%8D%9A%E5%AE%A2/" itemprop="url" rel="index">
+                    <span itemprop="name">博客</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/08/24/hexo_writing/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/08/24/hexo_writing/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2018/08/24/hexo_writing/" class="leancloud_visitors" data-flag-title="博客05/hexo/3.写作">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="hexo写作方式"><a href="#hexo写作方式" class="headerlink" title="hexo写作方式"></a>hexo写作方式</h1><h2 id="方式一："><a href="#方式一：" class="headerlink" title="方式一："></a>方式一：</h2><p>按<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/writing">hexo的方式</a>，重新写：</p>
+<pre><code>$ hexo new [layout] &lt;title&gt;
+</code></pre>
+<p>按默认的配置，会在source/_post目录下生成新的.md文件，<br><br>编辑内容，格式如下：</p>
+<pre><code>---
+title: ##标题
+date: ##时间，格式为 YYYY-MM-DD HH:mm:ss
+tag: ##文章关键词，多关键词格式为 keyword1,keywords2,...
+categories: ##分类
+keywords： ##文章关键词，多关键词格式为 keyword1,keywords2,...
+description: ##文章描述
+---
+Markdown正文
+</code></pre>
+<p>说明：以 — 分隔的区域是Front-matter，用于指定个别文件的变量<br>    Front-matter下面就是正文，可以写Markdown内容（注意：图片和链接要特殊处理）</p>
+<h2 id="方式二："><a href="#方式二：" class="headerlink" title="方式二："></a>方式二：</h2><p>将已写好的.md文档，复制到source/_posts目录下，然后调整：</p>
+<pre><code>1.编辑.md文档，在顶层加入Front-matter：
+如：
+---
+title: 标题
+date: 2018-08-22 09:53:33
+tag: [标签]
+categories: [分类] 
+---
+
+2.使用Markdown语法写作
+
+3.引入资源（图片、超链接）处理
+</code></pre>
+<h1 id="Markdown常用语法："><a href="#Markdown常用语法：" class="headerlink" title="Markdown常用语法："></a>Markdown常用语法：</h1><h2 id="斜体和粗体："><a href="#斜体和粗体：" class="headerlink" title="斜体和粗体："></a>斜体和粗体：</h2><pre><code>写法：
+*这是斜体* 或 _这也是斜体_ 
+**这是粗体**
+***这是加粗斜体***
+~~这是删除线~~
+
+快捷键： 
+Ctrl+I：斜体 
+Ctrl+B：粗体 
+Ctrl+U：下划线 
+Alt+Shift+5：删除线
+</code></pre>
+<h2 id="分级标题"><a href="#分级标题" class="headerlink" title="分级标题"></a>分级标题</h2><pre><code>写法：
+# 一级标题
+## 二级标题
+### 三级标题
+#### 四级标题
+##### 五级标题
+###### 六级标题
+</code></pre>
+<h2 id="gt-文字引用"><a href="#gt-文字引用" class="headerlink" title="&gt; 文字引用"></a>&gt; 文字引用</h2><pre><code>快捷键：Ctrl+Q
+</code></pre>
+<h2 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h2><pre><code>---
+</code></pre>
+<p>效果如下：</p>
+<hr>
+<h2 id="超链接（使用Markdown超链接替代-a标签）"><a href="#超链接（使用Markdown超链接替代-a标签）" class="headerlink" title="超链接（使用Markdown超链接替代 a标签）"></a>超链接（使用Markdown超链接替代 a标签）</h2><p><a href="%E9%93%BE%E6%8E%A5%E5%9C%B0%E5%9D%80" title="链接描述">链接文字</a><br>例如：<a target="_blank" rel="noopener" href="https://sgven.github.io/" title="我的博客">我的博客</a></p>
+<p>&lt;链接地址&gt;<br>例如：<a target="_blank" rel="noopener" href="https://sgven.github.io/">https://sgven.github.io</a>    </p>
+<pre><code>快捷键：Ctrl+K
+</code></pre>
+<h2 id="插入图片"><a href="#插入图片" class="headerlink" title="插入图片"></a>插入图片</h2><pre><code>使用Markdown语法插入图片：
+![](/images/insert_image.jpg)
+</code></pre>
+<p><font color="red"><strong>注意</strong></font>：引用路径前面不要用. </p>
+<p>例如, 不要使用这样的格式:</p>
+<pre><code>![](./images/xx.jpg)
+</code></pre>
+<h1 id="hexo对Markdown格式语法的支持"><a href="#hexo对Markdown格式语法的支持" class="headerlink" title="hexo对Markdown格式语法的支持"></a>hexo对Markdown格式语法的支持</h1><h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>Markdown部分语法在hexo中支持的不太友好<br><br>比如对图片资源的引用写法:</p>
+<pre><code>//Markdown写法：
+![](/images/insert_image.jpg)
+</code></pre>
+<p>在hexo中不支持显示</p>
+<h2 id="解决办法："><a href="#解决办法：" class="headerlink" title="解决办法："></a>解决办法：</h2><ul>
+<li>1.在Hexo 2时代，使用插件解决这个问题</li>
+<li>2.使用hexo的语法引入资源。——<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/asset-folders">官网文档说明</a>：随着Hexo 3发布，许多新的标签插件被加入到了核心代码中，<br>  使得你可以更简单地在文章中引用你的资源。</li>
+<li>3.使用图床+Markdown语法，引用图片(不需要安装插件)</li>
+</ul>
+<p>第一种解决办法，既兼容老版本的hexo 2，对图片引用的语法上也不用做太多改动，改下图片相对路径就好<br><br>第二种新的语法引入资源，一个限制是版本&gt;=hexo 3，也不太熟练<br><br>第三种方法也是比较科学的方法，推荐使用第一种和第三种</p>
+<br>
+> ↓↓↓ 不管用哪种方法(除了第三种图床)，第一步都需要，启动hexo的资源文件夹功能，设置配置为true 
+
+<h1 id="hexo资源文件夹功能"><a href="#hexo资源文件夹功能" class="headerlink" title="hexo资源文件夹功能"></a>hexo资源文件夹功能</h1><p>对于那些想要更有规律地提供图片和其他资源以及想要将他们的资源分布在各个文章上的人来说，Hexo也提供了更组织化的方式来管理资源。这个稍微有些复杂但是管理资源非常方便的功能可以通过将 config.yml 文件中的 post_asset_folder 选项设为 true 来打开。</p>
+<pre><code>_config.yml
+post_asset_folder: true //资源文件夹功能开关
+</code></pre>
+<p>当资源文件管理功能打开后，Hexo将会在你每一次通过 </p>
+<pre><code>hexo new [layout] &lt;title&gt; 
+</code></pre>
+<p>命令创建新文章时自动创建一个文件夹。这个资源文件夹将会有与这个 markdown 文件一样的名字。将所有与你的文章有关的资源放在这个关联文件夹中之后，你可以通过相对路径来引用它们。</p>
+<p>理解这段话的意思：</p>
+<ul>
+<li><ol>
+<li>不仅仅只是自动帮你创建好一样名字的文件夹，方便你统一管理</li>
+</ol>
+</li>
+<li><ol start="2">
+<li>要启用了这个开关，才可以通过相对路径引用到它们。——如果没有启用这个开关的话，是引用不到相对路径中的资源的。</li>
+</ol>
+</li>
+</ul>
+<h2 id="遇到的坑"><a href="#遇到的坑" class="headerlink" title="遇到的坑"></a>遇到的坑</h2><p>1.这里就遇到一个<font color="red">坑</font>：<br>使用了新特性，将站点配置和主题部分配置放在同一个配置文件 source/_data/next.yml 中，<br><br>我起初觉得这个功能仅仅只是自动创建了一个文件夹，所以就只在根目录下的_config.yml中配置为true了，<br><br>我们启动和部署都是用参数–config …/next.yml 来使用自定义的配置的，这个next.yml中没有启用，结果是引用相对路径的图片怎么都看不到。</p>
+<p>结论：<br>简单办法，在根目录下_config.yml和next.yml中都配置为true<br>——最终目的是：确保运行和发布时使用的配置中,资源文件夹功能开关是启用的</p>
+<pre><code>确保配置post_asset_folder: true
+即可在运行(hexo s)，发布(hexo g)时，引用到相对路径的图片，从而正确生成插入图片
+_posts
+|- post1.md
+|_ post1
+    |- pic1.png
+</code></pre>
+<p>2.这里还有一个<font color="red">坑</font>：<br><br>将已经写好的Markdown文档调整为hexo博客</p>
+<p>手动调整的.md文件，新建的图片文件夹</p>
+<ul>
+<li><ol>
+<li>必须和.md后缀前的名字一致</li>
+</ol>
+</li>
+<li><ol start="2">
+<li>而且.md文件和图片文件夹必须都在source/_posts根目录</li>
+</ol>
+</li>
+</ul>
+<p><img src="/.com//error_01.png"></p>
+<h1 id="引入资源方法说明"><a href="#引入资源方法说明" class="headerlink" title="引入资源方法说明"></a>引入资源方法说明</h1><h2 id="使用Markdown语法在hexo中引入图片"><a href="#使用Markdown语法在hexo中引入图片" class="headerlink" title="使用Markdown语法在hexo中引入图片"></a>使用Markdown语法在hexo中引入图片</h2><p>解决方法具体步骤：</p>
+<ul>
+<li>1.确保配置为，post_asset_folder: true</li>
+<li>2.安装插件 hexo-asset-image：<pre><code>  npm install hexo-asset-image --save
+</code></pre>
+</li>
+<li>3.建好放图片的文件夹，改引用图片的相对路径即可<br><br>  ===》（<font color="red">注意</font>：新建文件夹与.md文件同名且在_posts）</li>
+</ul>
+<h2 id="使用hexo-标签插件-语法引入资源"><a href="#使用hexo-标签插件-语法引入资源" class="headerlink" title="使用hexo(标签插件)语法引入资源"></a>使用hexo(标签插件)语法引入资源</h2><p>hexo语法引入资源： <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/tag-plugins">参考官网（标签插件/Image || Link）</a></p>
+<h3 id="Image"><a href="#Image" class="headerlink" title="Image"></a>Image</h3><p>在文章中插入指定大小的图片。</p>
+<pre><code>&#123;% img [class names] /path/to/image [width] [height] [title text [alt text]] %&#125;
+</code></pre>
+<h3 id="Link"><a href="#Link" class="headerlink" title="Link"></a>Link</h3><p>在文章中插入链接，并自动给外部链接添加 target=”_blank” 属性。</p>
+<pre><code>&#123;% link text url [external] [title] %&#125;
+</code></pre>
+<p>例如：</p>
+<pre><code>&#123;% img /hexo/writing/QQ亚索蜡笔小新.jpg [图片标题] %&#125;
+
+&#123;% link 链接 https://sgven.github.io/ [链接悬浮标题] %&#125;
+</code></pre>
+<h3 id="引入图片需要注意的坑："><a href="#引入图片需要注意的坑：" class="headerlink" title="引入图片需要注意的坑："></a>引入图片需要注意的坑：</h3><p>使用hexo 3 标签插件语法,引入图片需要注意的坑：</p>
+<p>1.没有安装 hexo-asset-image 插件时</p>
+<ul>
+<li><p>1.1 引用路径只能定位到source根目录下，下面的配置启用无效：</p>
+<pre><code>  _config.yml
+  post_asset_folder: true //资源文件夹功能开关
+</code></pre>
+<p>  ——如果安装了插件hexo-asset-image,则和Markdown语法一样，配置有效。</p>
+</li>
+<li><p>1.2 经试验，并且在source根目录下 以下划线 _ 开头命名的文件夹，路径定位不到</p>
+</li>
+<li><p>结论：所以在不用插件，仅使用hexo 3标签插件语法引用图片时，(或者配置不启用相对路径的功能)，此时只能引用到source目录下，且不是以 下划线<code> _ </code>开头的文件中的图片</p>
+<ul>
+<li><p>常用方法是：<br>在source 目录下新建 image(img) 文件夹，将所有图片放入。</p>
+<p>===》然后，引用图片时，使用类似下面的引用路径：</p>
+<p>  /image/../xx.png</p>
+</li>
+</ul>
+</li>
+</ul>
+<p>2.引用路径最左侧不能少了<code> /</code> ，少了会报错。引用路径格式如下：</p>
+<pre><code>/image/../xx.png
+</code></pre>
+<p>3.测试结果如图：</p>
+<p>1.<br><img src="/.com//error_02.png"></p>
+<p>2.<br><img src="/.com//error_03.png"></p>
+<p>3.<br><img src="/.com//error_04.png"></p>
+<p>使用七牛图床引用图片–参考下篇</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/23/hexo_theme/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="谢军">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/08/23/hexo_theme/" itemprop="url">博客04/hexo/2.主题</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-23T09:54:33+08:00">
+                2018-08-23
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%8D%9A%E5%AE%A2/" itemprop="url" rel="index">
+                    <span itemprop="name">博客</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/08/23/hexo_theme/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/08/23/hexo_theme/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2018/08/23/hexo_theme/" class="leancloud_visitors" data-flag-title="博客04/hexo/2.主题">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="hexo进阶——主题"><a href="#hexo进阶——主题" class="headerlink" title="hexo进阶——主题"></a>hexo进阶——主题</h1><p>hexo官网 GitHub Wiki上收集的主题：<a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/wiki/Themes">https://github.com/hexojs/hexo/wiki/Themes</a><br><br>hexo官网 文档上的主题：<a target="_blank" rel="noopener" href="https://hexo.io/themes/">https://hexo.io/themes/</a>（和上面的差不多，这个可以在界面搜索）<br><br>推荐使用<a target="_blank" rel="noopener" href="http://theme-next.iissnan.com/">Next</a>和<a target="_blank" rel="noopener" href="http://moxfive.coding.me/yelee/">Yelee</a>主题</p>
+<h2 id="主题下载："><a href="#主题下载：" class="headerlink" title="主题下载："></a>主题下载：</h2><p><img src="/.com//theme_install_01.png"><br>即使用git clone命令克隆到hexo的themes/xx主题目录下，再修改hexo配置文件：主题名改为你要用的</p>
+<pre><code>$ git clone &lt;repository&gt; themes/&lt;theme-name&gt;
+</code></pre>
+<h2 id="主题切换"><a href="#主题切换" class="headerlink" title="主题切换"></a>主题切换</h2><p>修改项目根目录配置文件<code>_config.yml</code>，即可切换至NexT主题</p>
+<pre><code>theme: next
+</code></pre>
+<h2 id="主题预览"><a href="#主题预览" class="headerlink" title="主题预览"></a>主题预览</h2><p>执行以下命令预览主题</p>
+<pre><code>hexo clean &amp;&amp; hexo s
+</code></pre>
+<h2 id="重点：修改主题配置，使用hexo新特性——Data-Files"><a href="#重点：修改主题配置，使用hexo新特性——Data-Files" class="headerlink" title="重点：修改主题配置，使用hexo新特性——Data Files"></a>重点：修改主题配置，使用hexo新特性——Data Files</h2><p><font color="red">注意：</font>这个特性是从hexo 3版本引起，需要 Hexo 的版本不低于 3</p>
+<p><a target="_blank" rel="noopener" href="https://github.com/iissnan/hexo-theme-next/blob/master/README.cn.md">参考：特性 Benefits</a></p>
+<ul>
+<li><p>1.为什么要用这个特性？<br><br>  原因就是：</p>
+<ul>
+<li>我们要对主题做一些个性化处理，启用一些新功能等 都会修改主题配置文件。</li>
+<li>所以当我们从git上更新主题，git pull时就可能会冲突，从而导致升级主题失败。</li>
+</ul>
+</li>
+<li><p>2.这个特性是干嘛的？ </p>
+<ul>
+<li>通过这个特性，你可以将所有的主题配置放置在站点的 source/_data/next.yml 文件中。</li>
+<li>主题配置文件可以不用做任何修改。若后续版本有配置相关的改动时，你仅需在 next.yml 中做相应调整即可——这样就解决了升级和修改的冲突</li>
+</ul>
+</li>
+<li><p>3.如何使用这个特性？</p>
+<ul>
+<li><p>1.请先确保你所使用的 Hexo 版本在 3 以上</p>
+</li>
+<li><p>2.在站点的 source/_data 目录下新建 next.yml 文件（_data目录可能需要新建）</p>
+</li>
+<li><p>3.迁移站点配置文件和主题配置文件中的配置到 next.yml 中</p>
+<pre><code>  站点配置文件：即根目录的_config.yml，全部复制进来，
+  theme，记得还是指定你用到的主题，
+  主题配置文件：也不用全迁移进来，迁移部分要用到的配置即可，做个性化配置处理。
+  
+  我认为，这里是theme:指定了引用的主题配置，
+  然后next.yml中的所有配置会合并主题配置且覆盖键值重名的配置，
+  这样就把需要改的主题配置复制到next.yml中，再个性化修改
+  相当于assign(主题配置,next.yml)
+</code></pre>
+</li>
+<li><p>4.使用 –config source/_data/next.yml 参数启动服务器, 生成或者部署。</p>
+<p>例如: </p>
+</li>
+<li><p>hexo clean &amp;&amp; hexo s –config source/_data/next.yml</p>
+</li>
+<li><p>hexo clean –config source/_data/next.yml &amp;&amp; hexo g –config source/_data/next.yml</p>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="使用NexT主题："><a href="#使用NexT主题：" class="headerlink" title="使用NexT主题："></a>使用NexT主题：</h1><h2 id="官网资料："><a href="#官网资料：" class="headerlink" title="官网资料："></a>官网资料：</h2><ul>
+<li>NexT 主题，官方设置教程：<a target="_blank" rel="noopener" href="http://theme-next.iissnan.com/">http://theme-next.iissnan.com/</a></li>
+<li>NexT主题：<a target="_blank" rel="noopener" href="https://github.com/iissnan/hexo-theme-next">github</a></li>
+</ul>
+<h2 id="参考demo-实现效果-："><a href="#参考demo-实现效果-：" class="headerlink" title="参考demo(实现效果)："></a>参考demo(实现效果)：</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://notes.iissnan.com/">https://notes.iissnan.com/</a></li>
+<li><a target="_blank" rel="noopener" href="http://wuxiaolong.me/">http://wuxiaolong.me/</a></li>
+</ul>
+<h2 id="主题相关的设置，参考资料："><a href="#主题相关的设置，参考资料：" class="headerlink" title="主题相关的设置，参考资料："></a>主题相关的设置，参考资料：</h2><ul>
+<li><a target="_blank" rel="noopener" href="http://www.wuxubj.cn/2016/08/Hexo-nexT-build-personal-blog/#">1</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhiho.github.io/2015/09/29/hexo-next/">2</a></li>
+</ul>
+<h2 id="NexT主题配置："><a href="#NexT主题配置：" class="headerlink" title="NexT主题配置："></a>NexT主题配置：</h2><h3 id="修改配置时需要注意的坑："><a href="#修改配置时需要注意的坑：" class="headerlink" title="修改配置时需要注意的坑："></a>修改配置时需要注意的坑：</h3><ul>
+<li>1.(请注意在冒号后面要加一个空格，不然会发生错误！)</li>
+</ul>
+<p>如下图所示：<br><img src="/.com//config_error_01.png"></p>
+<ul>
+<li>2.有的配置有层级结构，下一级的配置需要加一个tab,不然报错：FATAL bad indentation of a mapping entry at line …<br><br>例如：<ul>
+<li>侧边栏社交链接 配置：<pre><code>  #social:
+        #linkLabel: link || icon
+  social:
+  GitHub: https://github.com/your-user-name || github
+        微博: http://weibo.com/your-user-name || weibo
+</code></pre>
+若Github前没有tab制表符，hexo s 会启动报错</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="next-个性化主题配置—————————————–start"><a href="#next-个性化主题配置—————————————–start" class="headerlink" title=" next 个性化主题配置—————————————–start"></a> next 个性化主题配置—————————————–start</h2><h3 id="基础配置"><a href="#基础配置" class="headerlink" title="基础配置"></a>基础配置</h3><p>1.Schemes，选择不同的外观</p>
+<pre><code># Schemes
+# scheme: Muse
+# scheme: Mist
+scheme: Pisces
+# scheme: Gemini    
+</code></pre>
+<p>2.语言</p>
+<pre><code># 默认是英文的，设置为中文
+language: zh-Hans
+</code></pre>
+<p>3.设置 菜单</p>
+<pre><code>1.(除首页home和归档archives菜单项)菜单项——要想显示有内容，
+需要source对应目录下建有.md文件,用来生成显示的静态页面。
+例如：
+# 标签页tags： 添加一个标签页面，里面包含您网站中的所有标签
+# 1.创建一个名为 tags 页面： 
+# hexo new page &quot;tags&quot;
+# 2.编辑标签页, 设置页面类型为tags：
+
+    # title: All tags
+    # date: 2014-12-22 12:39:04
+    # type: &quot;tags&quot;
+# 3.配置文件，去掉tags前的#，将tags添加到菜单中
+    menu:
+      home: /
+      archives: /archives
+      tags: /tags
+    #   categories: /categories
+
+同样的步骤,创建好分类页
+# 分类页categories： 添加一个分类页面，里面包含您网站中的所有分类
+
+
+2.配置
+菜单前的 # 表示注释掉该行，即隐藏掉该条目
+
+v5.1.2 文本和图标配置是分开的
+# 设定菜单内容
+# menu:
+#   home: /
+#   archives: /archives
+#   about: /about
+#   categories: /categories
+#   tags: /tags
+
+# 设定菜单项的图标
+# menu_icons:
+#     home: home
+  #     about: user
+  #     tags: tags
+  #     categories: th
+  #     archives: archive
+
+v5.1.4 文本和图标的配置在一块
+menu:
+  home: / || home
+  # about: /about/ || user
+  # tags: /tags/ || tags
+  categories: /categories/ || th
+  archives: /archives/ || archive
+  #schedule: /schedule/ || calendar
+  #sitemap: /sitemap.xml || sitemap
+  #commonweal: /404/ || heartbeat
+
+若要修改菜单项的显示文本，以简体中文为例：
+“需要修改” 简体中文对应的翻译文件 “languages/zh-Hans.yml”
+（一般我们不修改,除非有必要，你想添加自定义的菜单选项，如menu下添加something）
+# menu:
+#   home: 首页
+#   archives: 归档
+#   categories: 分类
+#   ...
+#   something: 有料
+</code></pre>
+<p>4.设置 头像</p>
+<pre><code>1.在source/uploads目录下（若没有需新建uploads目录），放置头像图片——avatar.png
+2.配置
+avatar: /uploads/avatar.png
+</code></pre>
+<p>5.设置「动画效果」</p>
+<pre><code># 如果您比较在乎速度，可以将设置此字段的值为 false 来关闭动画。
+use_motion: true  # 开启动画效果
+# use_motion: false # 关闭动画效果
+</code></pre>
+<p>6.设置「背景动画」</p>
+<pre><code># NexT 自带两种背景动画效果:canvas_nest 或 three_waves
+# 注意： three_waves 在版本 5.1.1 中引入。只能同时开启一种背景动画效果。
+
+# canvas_nest
+# canvas_nest: true //开启动画
+# canvas_nest: false //关闭动画
+
+# three_waves
+three_waves: true //开启动画
+# three_waves: false //关闭动画
+</code></pre>
+<p>7.侧边栏社交链接</p>
+<pre><code># 侧栏社交链接的修改包含两个部分，第一是链接，第二是链接图标。
+# v5.1.2 链接和图标分开设置
+# social:
+#     GitHub: https://github.com/your-user-name
+#     微博: http://weibo.com/your-user-name
+# social_icons:
+#    GitHub: github
+#   微博: weibo
+
+# v5.1.4 链接和图标在一起设置
+social:
+  GitHub: https://github.com/sgven || github
+  微博: http://weibo.com/sgven || weibo
+</code></pre>
+<h3 id="第三方服务集成及配置"><a href="#第三方服务集成及配置" class="headerlink" title="第三方服务集成及配置"></a>第三方服务集成及配置</h3><h4 id="评论支持："><a href="#评论支持：" class="headerlink" title="评论支持："></a>评论支持：</h4><p>多说评论系统——已于2017年6月1日正式关停服务；Disqus评论系统是国外的，被墙了，加载慢网页都打不</p>
+<p>推荐使用valine，&gt;=v5.1.13版本NexT已集成</p>
+<ul>
+<li>1.按照<a target="_blank" rel="noopener" href="https://valine.js.org/quickstart.html">官方文档</a>步骤，在<a target="_blank" rel="noopener" href="https://leancloud.cn">LeanCloud</a>获取appid和appKey</li>
+<li>2.配置：<pre><code>  # Valine.
+  # You can get your appid and appkey from https://leancloud.cn
+  # more info please open https://valine.js.org
+  valine:
+    enable: true
+    appid:  y9dYvngbuUN1Fgu6UMNlq1G9-gzGzoHsz
+    appkey:  IBj5xiuJ5XsgC08nIgps1EmC
+    notify: false # mail notifier , https://github.com/xCss/Valine/wiki
+    verify: false # Verification code
+    placeholder: Just go go # comment box placeholder
+    avatar: mm # gravatar style
+    guest_info: nick,mail,link # custom comment header
+    pageSize: 10 # pagination size
+</code></pre>
+</li>
+</ul>
+<h4 id="添加文章阅读量统计功能（每篇文章）"><a href="#添加文章阅读量统计功能（每篇文章）" class="headerlink" title="添加文章阅读量统计功能（每篇文章）"></a>添加文章阅读量统计功能（每篇文章）</h4><ul>
+<li><p>1.参考博客：<a target="_blank" rel="noopener" href="https://notes.wanghao.work/2015-10-21-%E4%B8%BANexT%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0%E6%96%87%E7%AB%A0%E9%98%85%E8%AF%BB%E9%87%8F%E7%BB%9F%E8%AE%A1%E5%8A%9F%E8%83%BD.html#%E9%85%8D%E7%BD%AELeanCloud">为NexT主题添加文章阅读量统计功能</a>，在<a target="_blank" rel="noopener" href="https://leancloud.cn">LeanCloud</a>获取appid和appKey</p>
+</li>
+<li><p>2.配置：</p>
+<pre><code>  # Show number of visitors to each article.
+  # You can visit https://leancloud.cn get AppID and AppKey.
+  leancloud_visitors:
+    enable: true
+    app_id: xgUpeENo7gDDAxCFBwVK3kFM-gzGzoHsz
+    app_key: IctyJn3v5jERlkRV73Atz3ly
+</code></pre>
+</li>
+</ul>
+<h4 id="内容分享服务"><a href="#内容分享服务" class="headerlink" title="内容分享服务"></a>内容分享服务</h4><ul>
+<li><p>1.参考<a target="_blank" rel="noopener" href="http://theme-next.iissnan.com/third-party-services.html">next官网——内容分享服务/AddThis</a>获取AddThisId，具体如下：</p>
+<ul>
+<li><ol>
+<li>在网站 AddThis 上注册账号</li>
+</ol>
+</li>
+<li><ol start="2">
+<li>从下面菜单获得 AddThis id：More.. –&gt; General –&gt; ID。 具体 ID 获得方式参考以下截图 :</li>
+</ol>
+</li>
+</ul>
+</li>
+<li><p>2.配置：</p>
+<pre><code>  # Share
+  jiathis:
+    # uid: ra-5b7fe1b4fb273814
+  add_this_id: ra-5b7fe1b4fb273814
+</code></pre>
+</li>
+</ul>
+<h4 id="数据统计与分析"><a href="#数据统计与分析" class="headerlink" title="数据统计与分析"></a>数据统计与分析</h4><p>站点统计：我们使用——不蒜子统计(此特性在版本 5.0.1 中引入,只需简单配置一下即可)</p>
+<ul>
+<li><p>1.参考<a target="_blank" rel="noopener" href="http://theme-next.iissnan.com/third-party-services.html#analytics-busuanzi">next官网——数据统计与分析/不蒜子统计</a></p>
+<p>  编辑 主题配置文件 中的 busuanzi_count 的配置项<br>  当enable: true时，代表开启全局开关。<br>  若site_uv、site_pv、page_pv的值均为false时，不蒜子仅作记录而不会在页面上显示。</p>
+</li>
+<li><p>2.配置：</p>
+<pre><code>  # 算法a：pv的方式，单个用户连续点击n篇文章，记录n次访问量
+  # 算法b：uv的方式，单个用户连续点击n篇文章，只记录1次访客数。
+  # Show PV/UV of the website/page with busuanzi.
+  # Get more information on http://ibruce.info/2015/04/04/busuanzi/
+  busuanzi_count:
+    # count values only if the other configs are false
+    enable: true
+    # custom uv span for the whole site
+    site_uv: true
+    site_uv_header: &lt;i class=&quot;fa fa-user&quot;&gt;本站访客数:&lt;/i&gt;
+    site_uv_footer:
+    # custom pv span for the whole site
+    site_pv: false
+    site_pv_header: &lt;i class=&quot;fa fa-eye&quot;&gt;本站总访问量:&lt;/i&gt;
+    site_pv_footer:
+    # custom pv span for one page only
+    page_pv: false
+    page_pv_header: &lt;i class=&quot;fa fa-file-o&quot;&gt;&lt;/i&gt;
+    page_pv_footer:
+</code></pre>
+</li>
+</ul>
+<h4 id="菜单添加——本地搜索服务Local-Search"><a href="#菜单添加——本地搜索服务Local-Search" class="headerlink" title="菜单添加——本地搜索服务Local Search"></a>菜单添加——本地搜索服务Local Search</h4><p>参考<a target="_blank" rel="noopener" href="http://theme-next.iissnan.com/third-party-services.html#local-search">next官网——搜索服务/Local Search</a>：</p>
+<ul>
+<li><p>1.<font color="blue">安装 </font>hexo-generator-searchdb，在站点的根目录下执行以下命令：</p>
+<pre><code>      $ npm install hexo-generator-searchdb --save
+</code></pre>
+</li>
+<li><p>2.配置：</p>
+<pre><code>  # 2. 编辑 站点配置文件，新增以下内容到任意位置：
+  search:
+    path: search.xml
+    field: post
+    format: html
+    limit: 10000
+  # 3. 编辑 主题配置文件，启用本地搜索功能：
+  # Local search
+  local_search:
+    enable: true
+</code></pre>
+</li>
+</ul>
+<h4 id="添加字数统计、阅读时长"><a href="#添加字数统计、阅读时长" class="headerlink" title="添加字数统计、阅读时长"></a>添加字数统计、阅读时长</h4><ul>
+<li><p>1.安装 hexo-wordcount –save，在站点的根目录下执行以下命令：</p>
+<pre><code>  npm install hexo-wordcount --save
+</code></pre>
+</li>
+<li><p>2.编辑 主题配置文件，新增以下内容到任意位置：</p>
+<pre><code>  # Post wordcount display settings
+  # Dependencies: https://github.com/willin/hexo-wordcount
+  post_wordcount:
+    item_text: true
+    wordcount: true
+    min2read: true
+    totalcount: false
+    separated_meta: true
+</code></pre>
+</li>
+</ul>
+<p><a target="_blank" rel="noopener" href="http://www.crocutax.com/blog/hexo-add-word-count-reading-time-friendship-links">解决相关问题，参考文章</a></p>
+<ul>
+<li>3.如果仅仅只是打开开关，部署之后会发现文章的【字数统计】和【阅读时长】后面没有对应的xxx字，xx分钟等字样，只有光秃秃的数字在那里。</li>
+</ul>
+<p>解决方案：</p>
+<p>​找到Blog\themes\next\layout_macro\post.swig 文件，将“字”、“分钟” 字样添加到如下位置即可：</p>
+<pre><code>&lt;span title=&quot;&#123;&#123; __('post.wordcount') &#125;&#125;&quot;&gt;
+     &#123;&#123; wordcount(post.content) &#125;&#125; 字
+&lt;/span&gt;
+
+    ...
+&lt;span title=&quot;&#123;&#123; __('post.min2read') &#125;&#125;&quot;&gt;
+     &#123;&#123; min2read(post.content) &#125;&#125; 分钟
+&lt;/span&gt;
+</code></pre>
+<p>然后可以看到显示如：阅读时长 ≈ 2 分钟 ,但比如不需要 ≈ 显示，修改这个地方：</p>
+<pre><code>&#123;% if theme.post_wordcount.item_text %&#125;
+	        <span class="post-meta-item-text">&#123;&#123; __('post.min2read') &#125;&#125; &asymp;</span>
+	 &#123;% endif %&#125;
+</code></pre>
+<p>把这里的&asymp;删除即可。（PS：这个是 html 的特殊字符的表示）</p>
+<hr>
+<h2 id="next-个性化主题配置—————————————–end"><a href="#next-个性化主题配置—————————————–end" class="headerlink" title=" next 个性化主题配置—————————————–end"></a> next 个性化主题配置—————————————–end</h2><h3 id="主题制作（-感兴趣的看）"><a href="#主题制作（-感兴趣的看）" class="headerlink" title="主题制作（ 感兴趣的看）"></a>主题制作（ 感兴趣的看）</h3><ul>
+<li><a target="_blank" rel="noopener" href="http://www.ahonn.me/2016/12/15/create-a-hexo-theme-from-scratch/">从零开始制作 Hexo 主题</a></li>
+<li><a target="_blank" rel="noopener" href="https://segmentfault.com/a/1190000006057336">写一个自己的Hexo主题</a></li>
+</ul>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/22/hexo_introduction/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="谢军">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/08/22/hexo_introduction/" itemprop="url">博客03/hexo/1.入门</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-22T09:53:33+08:00">
+                2018-08-22
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%8D%9A%E5%AE%A2/" itemprop="url" rel="index">
+                    <span itemprop="name">博客</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/08/22/hexo_introduction/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/08/22/hexo_introduction/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2018/08/22/hexo_introduction/" class="leancloud_visitors" data-flag-title="博客03/hexo/1.入门">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>#资料：<br>hexo官网：<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/">https://hexo.io/</a><br><br>hexo官方中文文档：<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/">https://hexo.io/zh-cn/docs/</a><br></p>
+<h1 id="hexo入门概述"><a href="#hexo入门概述" class="headerlink" title="hexo入门概述"></a>hexo入门概述</h1><ul>
+<li>学习hexo的目的：<br><br>  使用hexo是要搭建博客——&gt;在这之前，先了解一下使用github搭建个人域名的网站，用来发布我们的博客。</li>
+<li>了解一下，入门过程：<br><ul>
+<li>先了解一下hexo是什么</li>
+<li>安装hexo</li>
+<li>初始化hexo的建站环境</li>
+<li>运行hexo server来启动，使用hexo的服务。<br><ul>
+<li>hexo会解析根目录下的source文件夹中的.md Markdown文件，生成html静态文件</li>
+<li>打开<a href="http://localhost:4000,即可看到效果，">http://localhost:4000,即可看到效果，</a></li>
+</ul>
+</li>
+<li>最后，发布到线上的静态文件效果就是本地看到的。</li>
+</ul>
+</li>
+</ul>
+<h2 id="hexo是什么："><a href="#hexo是什么：" class="headerlink" title="hexo是什么："></a>hexo是什么：</h2><pre><code>- Hexo 是一个快速、简洁且高效的博客框架
+- Hexo 使用 Markdown 解析文章，在几秒内，即可利用靓丽的主题生成静态网页。
+</code></pre>
+<h2 id="安装："><a href="#安装：" class="headerlink" title="安装："></a>安装：</h2><p>参考官网 <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/"> 安装 </a></p>
+<pre><code>先安装好 Node.js 和 Git
+
+运行命令：$ npm install -g hexo-cli
+</code></pre>
+<h2 id="建站"><a href="#建站" class="headerlink" title="建站"></a>建站</h2><p>参考官网 初始化<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/setup"> 建站 </a>环境。</p>
+<pre><code>运行命令：$ hexo init &lt;folder&gt;——Hexo 将会在指定文件夹中新建所需要的文件
+</code></pre>
+<p>如 hexo init blog</p>
+<h2 id="启动hexo-看运行效果"><a href="#启动hexo-看运行效果" class="headerlink" title="启动hexo,看运行效果"></a>启动hexo,看运行效果</h2><pre><code>cd &lt;folder&gt;——进入到hexo建站环境根目录
+hexo server(简写hexo s)
+
+#运行hexo，指定配置
+hexo clean &amp;&amp; hexo s --config source/_data/next.yml
+</code></pre>
+<p>如：<br><br>cd blog<br><br>hexo server<br><br>浏览器打开：<a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000/</a><br><br>然后可以写博客，把你的.md笔记放入source文件夹，做些调整，发布了。 <br></p>
+<ul>
+<li><p>（当然想要更好看，可以更改主题，加上需要的主题配置，在我下一篇博客可以学习下）</p>
+</li>
+<li><p>（发布时，可以使用hexo的一键部署功能，改一下根目录_config.yml配置中的git,将博客发布到github仓库）</p>
+</li>
+<li><p><font color="red">注意</font>：在 hexo server 这一步，有可能会遇到坑：</p>
+<ul>
+<li>如果遇到这个错误，ERROR Local hexo not found，解决办法如下：</li>
+<li>更新 Nodejs 到最新版本。（我就是node版本过低，一直报这个错）</li>
+</ul>
+</li>
+</ul>
+<h2 id="hexo发布部署"><a href="#hexo发布部署" class="headerlink" title="hexo发布部署"></a>hexo发布部署</h2><h3 id="命令"><a href="#命令" class="headerlink" title="命令"></a>命令</h3><pre><code>Hexo 提供了快速方便的一键部署功能，让您只需一条命令就能将网站部署到服务器上。
+$ hexo deploy
+</code></pre>
+<p>当然，在发布之前，除了配置文件，也需要先生成静态文件（即要发布的内容）</p>
+<pre><code>$ hexo generate
+</code></pre>
+<p>不过，这两条命令也可以放一起写，变成一条命令：</p>
+<pre><code>$ hexo generate --deploy
+$ hexo deploy --generate
+两个命令都可以，作用是相同的
+简写：
+    $ hexo g -d
+    $ hexo d -g
+</code></pre>
+<h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><pre><code>命令我们就用合并的简写，现在关心下配置：
+因为我们使用git仓库：
+</code></pre>
+<ul>
+<li><p>1.安装 hexo-deployer-git。（自动部署发布工具）</p>
+<pre><code>  $ npm install hexo-deployer-git --save
+</code></pre>
+</li>
+<li><p>2.修改配置。</p>
+<pre><code>  deploy:
+    type: git
+    repo: &lt;repository url&gt;
+    branch: [branch]
+    # message: [message],这里就用默认的
+</code></pre>
+<ul>
+<li>message：自定义提交信息 (默认为 Site updated: { now(‘YYYY-MM-DD HH:mm:ss’) })——（坑，官网说明是连着的两个左右花括号{}，在hexo中解析失败，花括号“{”,”}”不能紧挨着重复用）</li>
+</ul>
+</li>
+</ul>
+<p>具体配置如下所示：<br><img src="/.com//hexo_deploy_config_01.png"></p>
+<h3 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h3><p><img src="/.com//hexo_deploy_01.png"></p>
+<p>hexo部署deploy到github，强制更新，原来有的提交历史被替换了。</p>
+<p>发布到线上的效果——即hexo本地运行的显示效果</p>
+<p><img src="/.com//hexo_deploy_02.png"></p>
+<p><img src="/.com//hexo_deploy_03.png"></p>
+<h2 id="网站代码上传"><a href="#网站代码上传" class="headerlink" title="网站代码上传"></a>网站代码上传</h2><p>设置完毕，为避免本地代码丢失，可以将hexo下的所有文件提交一份到服务器。</p>
+<pre><code>#create project on github.com
+mkdir hexo-source
+cd hexo-source
+git init
+# copy all files in &#39;hexo-source&#39; folder here
+git add ..
+git commit -m &#39;first commit&#39;
+git remote add origin &#39;git@github.com:username/hexo-source.git&#39;
+git push -u origin master
+</code></pre>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/21/build_github_blog/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="谢军">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/08/21/build_github_blog/" itemprop="url">博客02/github/2.搭建个人域名博客博客</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-21T09:53:33+08:00">
+                2018-08-21
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%8D%9A%E5%AE%A2/" itemprop="url" rel="index">
+                    <span itemprop="name">博客</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/08/21/build_github_blog/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/08/21/build_github_blog/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2018/08/21/build_github_blog/" class="leancloud_visitors" data-flag-title="博客02/github/2.搭建个人域名博客博客">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="使用github搭建个人域名博客"><a href="#使用github搭建个人域名博客" class="headerlink" title="使用github搭建个人域名博客"></a>使用github搭建个人域名博客</h1><p> <a target="_blank" rel="noopener" href="https://pages.github.com/">官网参考 Build your own Websites </a> <br><br><a target="_blank" rel="noopener" href="https://sgven.github.io">我的github个人域名博客</a></p>
+<pre><code>1. 创建个人github账号
+
+2. 创建仓库:
+Repository name命名规则:username.github.io
+注意:username必须和Owner账号名称一致
+</code></pre>
+<p><img src="/.com//github_boke01.png"></p>
+<pre><code>3. 上传index.html文件,index.html文件位置在仓库根目录下
+</code></pre>
+<p><img src="/.com//github_boke02.png"></p>
+<pre><code>4. 按上述规则创建仓库,github Page默认会生成个人域名站点，网站默认域名:https://username.github.io/,
+对应域名打开文件即index.html
+</code></pre>
+<p><img src="/.com//github_boke03.png"></p>
+<ol start="5">
+<li>如果仓库名中的username与Owner账户名不一致,<br>则打开<a target="_blank" rel="noopener" href="https://username.github.io/%E7%BD%91%E9%A1%B5%E6%97%A0%E6%95%88">https://username.github.io/网页无效</a>.<br><img src="/.com//github_boke04.png"><br><img src="/.com//github_boke05.png"></li>
+</ol>
+<h2 id="github上传步骤-git相关命令使用"><a href="#github上传步骤-git相关命令使用" class="headerlink" title="github上传步骤,git相关命令使用"></a>github上传步骤,git相关命令使用</h2><pre><code>1. Clone the repository:
+</code></pre>
+<p><img src="/.com//git_remote_01.png"></p>
+<pre><code>2. Enter the project folder and add an index.html file
+
+3. Push it
+Add, commit, and push your changes
+</code></pre>
+<p><img src="/.com//git_remote_02.png"></p>
+<h2 id="通过github-Page创建个人域名站点"><a href="#通过github-Page创建个人域名站点" class="headerlink" title="通过github Page创建个人域名站点"></a>通过github Page创建个人域名站点</h2><p><a target="_blank" rel="noopener" href="https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/">官网说明</a></p>
+<pre><code>1.每个账号只能有一个站点吗？
+No，仅仅只是推荐用这个作为个人域名站点,简洁好记
+</code></pre>
+<p><img src="/.com//git_website01.png"></p>
+<pre><code>2.如何通过github Page 设置个人站点?
+--&gt;进入仓库--&gt;设置Settings--&gt;Options页签
+--&gt;找到GitHub Pages--&gt;Source选择master branch--&gt;点击Save
+--&gt;即可发布个人站点
+</code></pre>
+<p><img src="/.com//git_website02.png"></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/20/github_base_operate/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="谢军">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/08/20/github_base_operate/" itemprop="url">博客01/github/1.常规使用</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-20T09:53:33+08:00">
+                2018-08-20
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%8D%9A%E5%AE%A2/" itemprop="url" rel="index">
+                    <span itemprop="name">博客</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/08/20/github_base_operate/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/08/20/github_base_operate/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2018/08/20/github_base_operate/" class="leancloud_visitors" data-flag-title="博客01/github/1.常规使用">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="github常规使用"><a href="#github常规使用" class="headerlink" title="github常规使用"></a>github常规使用</h1><h2 id="创建仓库repository"><a href="#创建仓库repository" class="headerlink" title="创建仓库repository"></a>创建仓库repository</h2><p><img src="/.com//github_operation01.png"></p>
+<h2 id="删除仓库repository"><a href="#删除仓库repository" class="headerlink" title="删除仓库repository"></a>删除仓库repository</h2><pre><code>进入到要删除的repository仓库,点击设置Settings,如图
+</code></pre>
+<p><img src="/.com//github_operation02.png"><br><img src="/.com//github_operation03.png"></p>
+<h2 id="本地代码添加github远程仓库"><a href="#本地代码添加github远程仓库" class="headerlink" title="本地代码添加github远程仓库"></a>本地代码添加github远程仓库</h2><p><img src="/.com//github_operation04.png"></p>
+<p>本地没有git仓库，创建一个新的<br>create a new repository:</p>
+<pre><code>echo &quot;# spring-boot-demo&quot; &gt;&gt; README.md
+git init
+git add README.md
+git commit -m &quot;first commit&quot;
+git remote add origin https://github.com/sgven/spring-boot-demo.git
+git push -u origin master
+
+解释下上面的过程：
+// 创建README.md 内容是# spring-boot-demo
+// 创建一个名为 .git 的子目录，初始化的 Git 仓库
+// add README.md，还可以把你本地的代码add加到git暂存区
+// 可以 git status 查看本地git仓库的状态
+// 然后commit提交到本地git仓库
+// 添加远程git仓库
+// 推送到远程origin仓库的master分支上
+</code></pre>
+<p>本地已存在git仓库，直接添加远程仓库，再push<br>or push an existing repository:</p>
+<pre><code>git remote add origin https://github.com/sgven/spring-boot-demo.git
+git push -u origin master
+</code></pre>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+  </section>
+
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/page/3/">&lt;i class&#x3D;&quot;fa fa-angle-left&quot;&gt;&lt;&#x2F;i&gt;</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span>
+  </nav>
+
+
+
+          </div>
+          
+
+
+          
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/uploads/avatar.png"
+                alt="谢军" />
+            
+              <p class="site-author-name" itemprop="name">谢军</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/%7C%7C%20archive">
+              
+                  <span class="site-state-item-count">37</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">8</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">15</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/sgven" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="http://weibo.com/sgven" target="_blank" title="微博">
+                      
+                        <i class="fa fa-fw fa-weibo"></i>微博</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">谢军</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      <i class="fa fa-user">本站访客数:</i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      
+    </span>
+  
+
+  
+</div>
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/three/three.min.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/three/three-waves.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'y9dYvngbuUN1Fgu6UMNlq1G9-gzGzoHsz',
+        appKey: 'IBj5xiuJ5XsgC08nIgps1EmC',
+        placeholder: 'Just go go',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+  <script>AV.initialize("xgUpeENo7gDDAxCFBwVK3kFM-gzGzoHsz", "IctyJn3v5jERlkRV73Atz3ly");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

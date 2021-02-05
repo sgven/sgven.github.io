@@ -1,0 +1,4112 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale">
+<meta property="article:author" content="谢军">
+<meta name="twitter:card" content="summary">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/"/>
+
+
+
+
+
+  <title>Hexo</title>
+  
+
+
+
+
+
+
+
+
+<meta name="generator" content="Hexo 5.3.0"></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left 
+  page-home">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Hexo</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+  <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2021/02/05/linux09/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="谢军">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2021/02/05/linux09/" itemprop="url">linux09/命令/09.linux安装软件命令</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-02-05T14:40:33+08:00">
+                2021-02-05
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/linux/" itemprop="url" rel="index">
+                    <span itemprop="name">linux</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2021/02/05/linux09/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2021/02/05/linux09/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2021/02/05/linux09/" class="leancloud_visitors" data-flag-title="linux09/命令/09.linux安装软件命令">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="linux安装软件命令"><a href="#linux安装软件命令" class="headerlink" title="linux安装软件命令"></a>linux安装软件命令</h1><blockquote>
+<p>一点常识先了解下</p>
+</blockquote>
+<p>linux系统常用的有两种： CentOS 和 Ubuntu。</p>
+<p>它们分别有各自的软件管理工具，</p>
+<ul>
+<li><p>一种是类似于windows的“程序和功能” <strong>rpm</strong>/<strong>dpkg</strong>，可以查看已安装的软件和卸载。</p>
+<ul>
+<li>CentOS是： rpm </li>
+<li>Ubuntu是： dpkg</li>
+</ul>
+</li>
+<li><p>另一种是类似于软件管家的包管理工具 <strong>yum</strong>/<strong>apt-get</strong>，可以通过软件管家从软件仓库中获取软件。</p>
+<ul>
+<li>CentOS是： yum</li>
+<li>Ubuntu是： apt-get</li>
+</ul>
+</li>
+</ul>
+<p>Linux 允许我们配置从哪里下载软件，地点就在配置文件里面。<br>先配置远程仓库索引地址，再使用命令 “apt-get update” 更新仓库包索引。</p>
+<p><font color="orange">使用 “apt-get update” 命令时，就会从“/etc/apt/sources.list”中配置的远程仓库检索，然后重新从源仓库中同步文件索引</font>（即软件包索引）。</p>
+<ul>
+<li>CentOS，配置文件在/etc/yum.repos.d/CentOS-Base.repo里。</li>
+<li>Ubuntu，配置文件在/etc/apt/sources.list里。</li>
+</ul>
+<h2 id="CentOS"><a href="#CentOS" class="headerlink" title="CentOS"></a>CentOS</h2><h3 id="rpm"><a href="#rpm" class="headerlink" title="rpm"></a>rpm</h3><h4 id="rpm——查看已安装的软件"><a href="#rpm——查看已安装的软件" class="headerlink" title="rpm——查看已安装的软件"></a>rpm——查看已安装的软件</h4><ul>
+<li>查看安装的所有软件<pre><code>  rpm -qa
+</code></pre>
+</li>
+<li>查看是否安装了某软件<pre><code>  rpm -qa|grep 包名or关键字
+</code></pre>
+<h3 id="yum"><a href="#yum" class="headerlink" title="yum"></a>yum</h3>yum –help，查看这个命令怎么使用</li>
+</ul>
+<p>List of Commands:</p>
+<pre><code>check          Check for problems in the rpmdb
+check-update   检查是否有软件包更新
+clean          删除缓存的数据
+deplist        列出软件包的依赖关系
+distribution-synchronization Synchronize installed packages to the latest available versions
+downgrade      downgrade a package
+erase          从系统中移除一个或多个软件包
+groupinfo      显示组的详细信息
+groupinstall   向系统中安装一组软件包
+grouplist      列出可安装的组
+groupremove    从系统中移除一组软件包
+help           显示用法信息
+history        Display, or use, the transaction history
+info           显示关于软件包或组的详细信息
+install        向系统中安装一个或多个软件包
+list           列出一个或一组软件包
+makecache      创建元数据缓存
+provides       查找提供指定内容的软件包
+reinstall      覆盖安装一个包
+repolist       显示已配置的仓库
+resolvedep     判断哪个包提供了指定的依赖
+search         在软件包详细信息中搜索指定字符串
+shell          运行交互式的 yum 外壳
+update         更新系统中的一个或多个软件包
+upgrade        更新软件包同时考虑软件包取代关系
+version        Display a version for the machine and/or available repos.
+</code></pre>
+<p>常用的命令：</p>
+<pre><code>yum check-update       检查是否有软件包更新
+yum install 包名        安装
+yum erase 包名        卸载
+yum update 包名        更新
+yum search 包名        搜索
+比如，搜索jdk安装包
+yum search jdk
+
+yum makecache        建立缓存
+就是把服务器的包信息下载到本地电脑缓存起来，install时在缓存中搜索，提高了速度
+</code></pre>
+<h3 id="如何查看-yum-安装的软件路径"><a href="#如何查看-yum-安装的软件路径" class="headerlink" title="如何查看 yum 安装的软件路径"></a>如何查看 yum 安装的软件路径</h3><p>比如</p>
+<ol>
+<li><p>首先用 yum 安装了一个 redis</p>
+<pre><code> yum install redis
+</code></pre>
+</li>
+<li><p>查找redis的安装包</p>
+<pre><code>  rpm -qa|grep redis
+
+ #返回
+ redis-3.2.10-2.el7.x86_64
+</code></pre>
+</li>
+<li><p>查找安装包的安装路径</p>
+<pre><code> #注意-ql l是L字母
+ rpm -ql redis-3.2.10-2.el7.x86_64
+</code></pre>
+</li>
+</ol>
+<h2 id="如何在centos中查看、添加、启用和禁用一个仓库"><a href="#如何在centos中查看、添加、启用和禁用一个仓库" class="headerlink" title="如何在centos中查看、添加、启用和禁用一个仓库"></a>如何在centos中查看、添加、启用和禁用一个仓库</h2><h3 id="列出已启用的仓库"><a href="#列出已启用的仓库" class="headerlink" title="列出已启用的仓库"></a>列出已启用的仓库</h3><ul>
+<li><p>对于 CentOS/RHEL/OLE 系统：</p>
+<pre><code>  yum repolist
+
+  #查看详细信息
+  yum repolist all
+  #例如，过滤epel和ius
+  yum repolist all | grep &quot;epel*\|ius*&quot;
+  
+</code></pre>
+</li>
+</ul>
+<h3 id="添加一个新仓库"><a href="#添加一个新仓库" class="headerlink" title="添加一个新仓库"></a>添加一个新仓库</h3><p>每个仓库通常都提供自己的 .repo 文件。例子中将添加 EPEL 仓库 和 IUS 社区仓库。<br>但是没有 .repo 文件可用于这些仓库。因此，我们使用以下方法进行安装</p>
+<ul>
+<li><p>对于 EPEL 仓库，因为它可以从 CentOS 额外仓库获得，所以运行以下命令来安装它。</p>
+<pre><code>  yum install epel-release -y
+</code></pre>
+</li>
+<li><p>对于 IUS 社区仓库，运行以下 bash 脚本来安装。</p>
+<pre><code>  curl &#39;https://setup.ius.io/&#39; -o setup-ius.sh
+  sh setup-ius.sh
+</code></pre>
+</li>
+<li><p>如果你有 .repo 文件，在 RHEL/CentOS/OEL 中，只需运行以下命令来添加一个仓库。</p>
+<pre><code>  yum-config-manager --add-repo http://www.example.com/example.repo
+
+  #执行结果
+  Loaded plugins: product-id, refresh-packagekit, subscription-manager
+  adding repo from: http://www.example.com/example.repo
+  grabbing file http://www.example.com/example.repo to /etc/yum.repos.d/example.repo
+  example.repo                                             |  413 B     00:00
+  repo saved to /etc/yum.repos.d/example.repo
+</code></pre>
+</li>
+</ul>
+<pre><code>添加这些仓库之后运行 yum repolist 命令，就可以看到新添加的仓库了。
+</code></pre>
+<ul>
+<li><p>每个仓库都有多个渠道，比如测试（Testing）、开发（Dev）和存档（Archive）等。通过导航到仓库文件位置，你可以更好地理解这一点。</p>
+<pre><code>  ls -lh /etc/yum.repos.d
+
+  总用量 44K
+  -rw-r--r--. 1 root root 2.0K 6月  26 2018 CentOS-Base.repo
+  -rw-r--r--. 1 root root  647 6月  26 2018 CentOS-Debuginfo.repo
+  -rw-r--r--. 1 root root  289 6月  26 2018 CentOS-fasttrack.repo
+  -rw-r--r--. 1 root root  630 6月  26 2018 CentOS-Media.repo
+  -rw-r--r--. 1 root root 8.7K 6月  26 2018 CentOS-Vault.repo
+  -rw-r--r--. 1 root root 2.4K 10月 19 2019 docker-ce.repo
+  -rw-r--r--. 1 root root 2.1K 7月  24 2017 elrepo.repo
+  -rw-r--r--. 1 root root  957 11月  5 2012 epel.repo
+  -rw-r--r--. 1 root root 1.1K 11月  5 2012 epel-testing.repo
+</code></pre>
+</li>
+</ul>
+<h3 id="如何在系统中启用一个仓库"><a href="#如何在系统中启用一个仓库" class="headerlink" title="如何在系统中启用一个仓库"></a>如何在系统中启用一个仓库</h3><p>例如，启用 epel-testing.repo</p>
+<pre><code>yum-config-manager --enable epel-testing
+</code></pre>
+<p>运行 yum repolist 命令来检查是否启用了 “epel-testing”。它被启用了，可以从列表中看到它。</p>
+<p>如果你想同时启用多个仓库，使用以下格式。这个命令将启用 epel、epel-testing 和 ius 仓库：</p>
+<pre><code>yum-config-manager --enable epel epel-testing ius
+</code></pre>
+<h3 id="如何在系统中禁用一个仓库"><a href="#如何在系统中禁用一个仓库" class="headerlink" title="如何在系统中禁用一个仓库"></a>如何在系统中禁用一个仓库</h3><p>例如，禁用 epel-testing.repo 和 ius.repo</p>
+<pre><code>yum-config-manager --disable epel-testing ius
+</code></pre>
+<p>运行 yum repolist 命令检查 “epel-testing” 和 “ius” 仓库是否被禁用。被禁用了的那些仓库，则不能看到。</p>
+<h2 id="使用wget下载包，然后rpm安装"><a href="#使用wget下载包，然后rpm安装" class="headerlink" title="使用wget下载包，然后rpm安装"></a>使用wget下载包，然后rpm安装</h2><p>在linux系统中，有时通过yum下载太慢（没有国内的仓库地址），我们开源通过 wget 下载国内的安装包。再通过rpm命令安装。</p>
+<pre><code>比如，在清华大学开源软件镜像站中有jenkins的镜像资源。
+&gt;https://mirrors.tuna.tsinghua.edu.cn/jenkins/redhat-stable/
+
+选择一个版本，使用wget命令下载rpm包： 
+&gt;wget https://mirrors.tuna.tsinghua.edu.cn/jenkins/redhat-stable/jenkins-2.222.4-1.1.noarch.rpm
+
+rpm -ivh 软件包名
+&gt;rpm -ivh jenkins-2.222.4-1.1.noarch.rpm
+</code></pre>
+<h2 id="还可以下载好压缩包后，xftp上传到linux系统"><a href="#还可以下载好压缩包后，xftp上传到linux系统" class="headerlink" title="还可以下载好压缩包后，xftp上传到linux系统"></a>还可以下载好压缩包后，xftp上传到linux系统</h2><p>比如，maven，下载地址：<a href="https://maven.apache.org/download.cgi" target="_blank">https://maven.apache.org/download.cgi</a></p>
+<ul>
+<li><p>1.(windows)下载压缩包</p>
+<blockquote>
+<p>apache-maven-3.6.3-bin.tar.gz</p>
+</blockquote>
+</li>
+<li><p>2.(linux)上传压缩包</p>
+<pre><code>  cd /usr/local
+  mkdir maven
+  上传到此目录下：/usr/local/maven
+</code></pre>
+</li>
+<li><p>3.解压缩安装</p>
+<pre><code>  tar -xzvf apache-maven-3.6.3-bin.tar.gz 
+</code></pre>
+</li>
+<li><p>4.设置环境变量</p>
+<blockquote>
+<p>配置环境变量</p>
+</blockquote>
+<pre><code>  vim /etc/profile
+</code></pre>
+<blockquote>
+<p>添加到文件末尾</p>
+</blockquote>
+<pre><code>  MAVEN_HOME=/usr/local/maven/apache-maven-3.6.3
+  export PATH=$&#123;MAVEN_HOME&#125;/bin:$&#123;PATH&#125;
+</code></pre>
+</li>
+</ul>
+<pre><code>&gt;重载环境变量
+
+    source /etc/profile
+</code></pre>
+<ul>
+<li><p>5.验证安装结果</p>
+<pre><code>  mvn –v
+</code></pre>
+</li>
+</ul>
+<h2 id="Ubuntu"><a href="#Ubuntu" class="headerlink" title="Ubuntu"></a>Ubuntu</h2><h3 id="dpkg"><a href="#dpkg" class="headerlink" title="dpkg"></a>dpkg</h3><h4 id="dpkg——查看已安装的软件"><a href="#dpkg——查看已安装的软件" class="headerlink" title="dpkg——查看已安装的软件"></a>dpkg——查看已安装的软件</h4><ul>
+<li>查看安装的所有软件<pre><code>  dpkg --list
+  //简写
+  dpkg -l
+</code></pre>
+</li>
+<li>查看是否安装了某软件 （| 是管道，grep是搜索工具，这个命令的意思list的结果输出到管道里，作为grep的输入，grep进行搜索带关键字的行，并输出到命令行）<pre><code>  dpkg --list    |grep 包名
+  //简写
+  dpkg -l    |grep 包名
+</code></pre>
+</li>
+</ul>
+<h3 id="apt-get、apt-cache"><a href="#apt-get、apt-cache" class="headerlink" title="apt-get、apt-cache"></a>apt-get、apt-cache</h3><ul>
+<li><p>1、apt-get、apt-cache命令的子命令不清楚的话，可以加-h查看帮助，会列出常用命令和简要说明：</p>
+<pre><code>  Most used commands:
+  ...
+
+  See apt-cache(8)、See apt-get(8) for more information about the available commands
+</code></pre>
+</li>
+<li><p>2、想查看可用命令的更多信息的话，通过搜索引擎查看API（百度一下）</p>
+<p>  百度一下 <a href="https://manpages.debian.org/jessie/apt/apt-get.8.en.html" target="_blank">See apt-get(8)</a>、<a href="https://manpages.debian.org/stretch/apt/apt-cache.8.en.html" target="_blank">See apt-cache(8)</a></p>
+</li>
+</ul>
+<h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><pre><code>sudo apt-get install 包名
+
+//例如安装jdk，知道jdk包名就好，不需要太具体
+sudo apt-get install openjdk-8-jdk
+</code></pre>
+<h4 id="查询软件包"><a href="#查询软件包" class="headerlink" title="查询软件包"></a>查询软件包</h4><pre><code>// 检查是否有损坏的依赖
+sudo apt-get check
+</code></pre>
+<h4 id="apt-cache——查看仓库索引中可用的软件包"><a href="#apt-cache——查看仓库索引中可用的软件包" class="headerlink" title="apt-cache——查看仓库索引中可用的软件包"></a>apt-cache——查看仓库索引中可用的软件包</h4><ul>
+<li><p>列出所有可用的包</p>
+<pre><code>  apt-cache pkgnames
+</code></pre>
+</li>
+<li><p><strong>用关键字搜索包</strong>（当你<font color="blue"><strong>不确定包名时</strong></font>很有用，输入与包相关的关键字即可）</p>
+<pre><code>  apt-cache search &quot;关键字&quot;，可以省略&quot;&quot;
+  例如：
+  apt-cache search jdk
+
+  查询得到jdk8的包名——》 openjdk-8-jdk
+  
+</code></pre>
+</li>
+<li><p>查询仓库中软件包的所有版本</p>
+<pre><code>  apt-cache madison 包名
+  例如：
+  apt-cache madison openjdk-8-jdk
+</code></pre>
+</li>
+<li><p>查询指定包的版本</p>
+<pre><code>  apt-cache policy 包名
+  例如：
+  apt-cache policy vim
+</code></pre>
+<p>  <img src="/.com//instasll01.png"></p>
+</li>
+<li><p>显示特定包的基本信息</p>
+<pre><code>  apt-cache show 包名
+  例如：
+  apt-cache show postfix
+</code></pre>
+</li>
+<li><p>列出包的依赖</p>
+<pre><code>  apt-cache depends 包名
+  例如：
+  apt-cache depends postfix
+</code></pre>
+</li>
+</ul>
+<h4 id="更新包"><a href="#更新包" class="headerlink" title="更新包"></a>更新包</h4><ul>
+<li><p>使用 “apt-get update” 更新仓库索引</p>
+<p>  可以在“/etc/apt/sources.list”中添加（配置）远程仓库索引，然后使用 “apt-get update” 命令更新仓库。</p>
+<p>  <font color="orange">使用 “apt-get update” 命令时，就会从“/etc/apt/sources.list”中配置的远程仓库检索，然后重新从源仓库中同步文件索引</font>（即软件包索引）。</p>
+<pre><code>  //需要管理员权限
+  sudo apt-get update
+</code></pre>
+</li>
+<li><p>升级所有已安装的包</p>
+<pre><code>  sudo apt-get upgrade
+</code></pre>
+</li>
+<li><p>更新特定的包</p>
+<pre><code>  //后面接上“--only-upgrade”用来更新一个特定的包
+  sudo apt-get install 包名 --only-upgrade
+</code></pre>
+<p>  <img src="/.com//update.png"></p>
+</li>
+</ul>
+<h4 id="卸载"><a href="#卸载" class="headerlink" title="卸载"></a>卸载</h4><pre><code>//仅删除包（remove：Remove packages）
+sudo apt-get remove 包名
+//完全清除一个已安装的包，一并删除配置文件（purge：Remove packages and config files）
+sudo apt-get purge 包名
+</code></pre>
+<h3 id="常用软件安装如下"><a href="#常用软件安装如下" class="headerlink" title="常用软件安装如下"></a>常用软件安装如下</h3><ul>
+<li><p>安装vim</p>
+<p>  sudo apt-get install vim</p>
+</li>
+<li><p>安装openssh-server</p>
+<p>  sudo apt-get install openssh-server</p>
+</li>
+<li><p>安装zip unzip</p>
+<p>  sudo apt-get install zip unzip</p>
+</li>
+<li><p>安装jdk</p>
+<p>  sudo apt-get install openjdk-8-jdk</p>
+</li>
+<li><p>安装mysql-server</p>
+<p>  sudo apt-get install mysql-server</p>
+</li>
+</ul>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2021/02/05/linux08/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="谢军">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2021/02/05/linux08/" itemprop="url">linux08/命令/08.linux防火墙命令</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-02-05T14:30:33+08:00">
+                2021-02-05
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/linux/" itemprop="url" rel="index">
+                    <span itemprop="name">linux</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2021/02/05/linux08/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2021/02/05/linux08/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2021/02/05/linux08/" class="leancloud_visitors" data-flag-title="linux08/命令/08.linux防火墙命令">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="linux-防火墙命令"><a href="#linux-防火墙命令" class="headerlink" title="linux 防火墙命令"></a>linux 防火墙命令</h1><h2 id="可以ping通虚拟机但无法访问8080端口"><a href="#可以ping通虚拟机但无法访问8080端口" class="headerlink" title="可以ping通虚拟机但无法访问8080端口"></a>可以ping通虚拟机但无法访问8080端口</h2><ul>
+<li>虚拟机运行的linux系统，因为防火墙的原因，能ping通IP，但无法访问端口。需要用防火墙设置，对外开放你需要访问的端口。</li>
+<li>因为是默认安装的虚拟机所以没有开放80,8080等端口，打开端口即可</li>
+</ul>
+<p>centos 6防火墙是iptables，centos 7防火墙是firewall-cmd</p>
+<h3 id="firewall-cmd"><a href="#firewall-cmd" class="headerlink" title="firewall-cmd"></a>firewall-cmd</h3><pre><code># 查看可访问的端口，显示没有
+firewall-cmd --list-ports  
+
+# 添加端口
+# 成功的话，命令行均提示：“sucess”
+firewall-cmd --zone=public --add-port=8080/tcp --permanent
+firewall-cmd --zone=public --add-port=9090/tcp --permanent
+firewall-cmd --zone=public --add-port=9091/tcp --permanent
+
+# 重启防火墙 
+firewall-cmd --reload
+
+# 再次查询 
+firewall-cmd --list-ports 显示可访问8080端口
+
+# 关闭防火墙
+systemctl stop firewalld.service
+
+# 删除端口
+firewall-cmd --zone=public --remove-port=8080/tcp --permanent
+</code></pre>
+<h3 id="firewall-cmd-command-not-found"><a href="#firewall-cmd-command-not-found" class="headerlink" title="firewall-cmd: command not found"></a>firewall-cmd: command not found</h3><pre><code>yum install firewalld
+</code></pre>
+<h3 id="firewalld-command-not-found"><a href="#firewalld-command-not-found" class="headerlink" title="firewalld command not found"></a>firewalld command not found</h3><p>EPEL(Extra Packages for Enterprise Linux )即企业版Linux的扩展包，提供了很多可共Centos使用的组件，安装完这个以后基本常用的rpm都可以找到。</p>
+<pre><code>yum install epel-release
+</code></pre>
+<h3 id="iptables"><a href="#iptables" class="headerlink" title="iptables"></a>iptables</h3><p>可能CentOS 6.10系统版本问题，<font color="red">依然找不到 firewalld 包</font>，使用CentOS 6.10自带的 <strong>iptables</strong> 防火墙。</p>
+<pre><code>#防火墙基本操作
+service iptables status            -- 防火墙服务是否启动
+service iptables start            -- 启动防火墙
+service iptables restart           -- 重启防火墙
+service iptables  stop          -- 关闭防火墙
+
+重启后永久性生效：
+chkconfig iptables off             -- 永久关闭防火墙
+chkconfig iptables on            -- 永久开启防火墙
+</code></pre>
+<p>1.确认、并启动防火墙</p>
+<p>2.开启xx端口</p>
+<pre><code>vim /etc/sysconfig/iptables
+</code></pre>
+<p>加入以下内容</p>
+<pre><code># 暴露8080端口
+-A INPUT -m state --state NEW -m tcp -p tcp --dport 8080 -j ACCEPT
+# 暴露9090端口
+-A INPUT -m state --state NEW -m tcp -p tcp --dport 9090 -j ACCEPT
+</code></pre>
+<p>3.保存退出后重启防火墙</p>
+<pre><code>service iptables restart
+</code></pre>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2021/02/05/linux07/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="谢军">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2021/02/05/linux07/" itemprop="url">linux07/命令/07.linux文件命令</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-02-05T14:20:33+08:00">
+                2021-02-05
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/linux/" itemprop="url" rel="index">
+                    <span itemprop="name">linux</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2021/02/05/linux07/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2021/02/05/linux07/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2021/02/05/linux07/" class="leancloud_visitors" data-flag-title="linux07/命令/07.linux文件命令">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="文件命令"><a href="#文件命令" class="headerlink" title="文件命令"></a>文件命令</h1><blockquote>
+<p>复制命令</p>
+</blockquote>
+<ul>
+<li>cp src desc</li>
+</ul>
+<blockquote>
+<p>移动命令</p>
+</blockquote>
+<ul>
+<li>mv src desc</li>
+</ul>
+<blockquote>
+<p>删除命令</p>
+</blockquote>
+<ul>
+<li><p>rm -rf 文件夹</p>
+</li>
+<li><p>rm -f 文件</p>
+<ol>
+<li>-r 递归删除，指定的文件夹下不管多少级目录及文件，一并删除</li>
+<li>-f 强制删除，不做任何提示</li>
+</ol>
+</li>
+</ul>
+<h2 id="压缩、解压缩命令"><a href="#压缩、解压缩命令" class="headerlink" title="压缩、解压缩命令"></a>压缩、解压缩命令</h2><h3 id="使用默认的tar进行操作"><a href="#使用默认的tar进行操作" class="headerlink" title="使用默认的tar进行操作"></a>使用默认的tar进行操作</h3><pre><code>tar --help 查看帮助
+</code></pre>
+<p>主操作模式:</p>
+<ul>
+<li>-A, –catenate, –concatenate   追加 tar 文件至归档</li>
+<li><font color="red">-c</font>（压缩）, –create               创建一个新归档</li>
+<li>-d, –diff, –compare      找出归档和文件系统的差异<pre><code>--delete               从归档(非磁带！)中删除
+</code></pre>
+</li>
+<li>-r, –append               追加文件至归档结尾</li>
+<li>-t, –list                 列出归档内容<pre><code>--test-label           测试归档卷标并退出
+</code></pre>
+</li>
+<li>-u, –update               仅追加比归档中副本更新的文件</li>
+<li><font color="red">-x</font>（解压缩）, –extract, –get       从归档中解出文件</li>
+</ul>
+<p>操作修饰符:<br><br>重写控制:<br><br>选择输出流:<br><br>操作文件属性:<br><br>设备选择和切换:<br></p>
+<ul>
+<li><font color="red">-f</font>, –file=ARCHIVE         使用归档文件或 ARCHIVE 设备<br><pre><code>  --force-local
+                   即使归档文件存在副本还是把它认为是本地归档
+</code></pre>
+</li>
+</ul>
+<p>设备分块:<br><br>选择归档格式:<br><br>压缩选项:<br></p>
+<ul>
+<li>-a, –auto-compress        使用归档后缀名来决定压缩程序<ul>
+<li>-I, –use-compress-program=PROG<pre><code>               通过 PROG 过滤(必须是能接受 -d
+               选项的程序)
+</code></pre>
+</li>
+<li><font color="red">-j</font>, –bzip2                通过 bzip2 过滤归档</li>
+<li>-J, –xz                   通过 xz 过滤归档</li>
+<li>-lzip                 通过 lzip 过滤归档</li>
+<li>-lzma                 通过 lzma 过滤归档</li>
+<li>-lzop</li>
+<li>-no-auto-compress     不使用归档后缀名来决定压缩程序<ul>
+<li><font color="red">-z</font>, –gzip, –gunzip, –ungzip   通过 gzip 过滤归档</li>
+<li>-Z, –compress, –uncompress   通过 compress 过滤归档</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>本地文件选择:<br><br>提示性输出:</p>
+<ul>
+<li><font color="red">-v</font>, –verbose              详细地列出处理的文件</li>
+</ul>
+<blockquote>
+<p>示例</p>
+</blockquote>
+<pre><code> tar -cf archive.tar foo bar  # 从文件 foo 和 bar 创建归档文件
+archive.tar。
+tar -tvf archive.tar         # 详细列举归档文件 archive.tar
+中的所有文件。
+tar -xf archive.tar          # 展开归档文件 archive.tar
+中的所有文件。
+</code></pre>
+<blockquote>
+<p>小结</p>
+</blockquote>
+<pre><code>压缩    -c
+解压缩 -x
+
+加z，就是操作 *.gz 格式的压缩文件
+
+一般加f，用来指定文件
+
+加v就是列出处理的文件、提示性输出（查看压缩、解压缩过程的）
+
+*.tar 就用 tar -xvf解压 -cvf压缩
+*.tar.gz 就用 tar -xzvf 解压 tar -czvf压缩 
+</code></pre>
+<h3 id="使用zip、unzip进行操作"><a href="#使用zip、unzip进行操作" class="headerlink" title="使用zip、unzip进行操作"></a>使用zip、unzip进行操作</h3><pre><code># -r表示递归子目录及文件
+zip -r filename.zip ./*
+
+unzip filename.zip
+</code></pre>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2021/02/05/linux06/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="谢军">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2021/02/05/linux06/" itemprop="url">linux06/命令/06.linux命令</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-02-05T13:20:33+08:00">
+                2021-02-05
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/linux/" itemprop="url" rel="index">
+                    <span itemprop="name">linux</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2021/02/05/linux06/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2021/02/05/linux06/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2021/02/05/linux06/" class="leancloud_visitors" data-flag-title="linux06/命令/06.linux命令">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="linux基础命令"><a href="#linux基础命令" class="headerlink" title="linux基础命令"></a>linux基础命令</h1><h2 id="基本操作"><a href="#基本操作" class="headerlink" title="基本操作"></a>基本操作</h2><blockquote>
+<p>linux系统下复制、粘贴（快捷键）</p>
+</blockquote>
+<ul>
+<li>复制：ctrl + insert</li>
+<li>粘贴：shift + insert</li>
+</ul>
+<blockquote>
+<p><code><strong>tab键</strong></code>： 可以补全命令</p>
+</blockquote>
+<h2 id="你需要掌握的常识"><a href="#你需要掌握的常识" class="headerlink" title="你需要掌握的常识"></a>你需要掌握的常识</h2><blockquote>
+<p><code><strong>sudo</strong></code> 命令： 表示以系统管理者的身份执行指令。没有权限时，有以下两种办法：</p>
+</blockquote>
+<ul>
+<li><p><code><strong>sudo</strong></code>命令：一律在命令前加sudo命令，例如：</p>
+<ul>
+<li>安装包时没有权限</li>
+<li>文件只读时没有权限写入，加 sudo 命令来打开编辑文件</li>
+</ul>
+</li>
+<li><p><code><strong>sudo su</strong></code>命令：  转换成超级用户（管理员root），即使用下面命令后，用户会变成root</p>
+</li>
+</ul>
+<blockquote>
+<p><code><strong>-h</strong></code> 或 <code><strong>--help</strong></code>：查看帮助</p>
+</blockquote>
+<p> 一般命令不知道如何用，或是想查看命令的子命令</p>
+<p>使用方式：命令后面 加 -h，没效果的话，就试试完整的 –help</p>
+<p>例如：</p>
+<pre><code>passwd -h
+dpkg --help
+# 比如不知道apt-get有哪些子命令（install、update），就可以查看
+apt-get --help
+</code></pre>
+<h2 id="基础命令"><a href="#基础命令" class="headerlink" title="基础命令"></a>基础命令</h2><blockquote>
+<p>1、用户密码</p>
+</blockquote>
+<ul>
+<li><p>passwd：修改密码</p>
+<pre><code>  passwd
+</code></pre>
+</li>
+<li><p>useradd：添加用户</p>
+<pre><code>   useradd sgven
+</code></pre>
+</li>
+<li><p>cat：将文件里的内容输出在命令行</p>
+<pre><code>  cat /etc/passwd
+  cat /etc/apt/sources.list
+</code></pre>
+</li>
+</ul>
+<blockquote>
+<p>2、浏览文件</p>
+</blockquote>
+<ul>
+<li>cd： change directory，切换目录</li>
+<li>ls： list，列出当前目录下的文件</li>
+</ul>
+<blockquote>
+<p>3、查看文件的权限</p>
+</blockquote>
+<pre><code>//用列表的方式列出文件
+ls -l
+drwxr-xr-x 6 root root 4096 Oct 20 2017 apt
+-rw-r--r-- 1 root root 211 Oct 20 2017 hosts
+
+第一个字段：
+
+- 第一个字符是**文件类型**
+    - “-”，表示普通文件；
+    - “d”，表示目录 
+- 剩下的 9 个字符是**模式（即权限位）**
+
+    - 3 个一组，每一组 rwx 表示“读（read）”“写（write）”“执行（execute）”；
+    - 这三组分别表示文件所属的用户权限、文件所属的组权限以及其他用户的权限。
+
+第二个字段： **硬链接（hard link）数目**
+
+第三个字段： **所属用户**
+
+第四个字段： **所属组**
+
+第五个字段： 文件的大小
+
+第六个字段： **文件被修改的日期**
+
+最后： **文件名**
+</code></pre>
+<blockquote>
+<p>4、改变权限：chmod</p>
+</blockquote>
+<pre><code># chmod 即change mode（改变权限）
+# 777，每位数值表示三位二进制rwx的权限，分别表示文件所属的用户权限、文件所属的组权限以及其他用户的权限
+# 每位二进制分别对应rwx，如4&lt;=&gt;100&lt;=&gt;r--（只读）,6&lt;=&gt;110&lt;=&gt;rw-（读写权限），7&lt;=&gt;111&lt;=&gt;rwx（所有权限）
+# 777 &lt;=&gt; 111,111,111 &lt;=&gt; rwxrwxrwx
+
+chmod 权限 文件/文件夹（chmod MODE FILE）
+例如：
+chmod 711 hosts
+</code></pre>
+<blockquote>
+<p>5、改变所属用户：chown</p>
+</blockquote>
+<pre><code>chown 即change owner（改变所属用户）
+
+chown 用户 文件/文件夹（chown OWNER FILE）
+例如：
+chown xiej hosts
+</code></pre>
+<blockquote>
+<p>6、改变所属组：chgrp</p>
+</blockquote>
+<pre><code>chgrp 即change group（改变所属组）
+
+chgrp 所属组 文件/文件夹（chgrp GROUP FILE）
+例如：
+</code></pre>
+<blockquote>
+<p>7、关机和重启</p>
+</blockquote>
+<ul>
+<li>关机：shutdown -h now（现在就关机）</li>
+<li>重启：reboot</li>
+</ul>
+<blockquote>
+<p>8、杀死进程、关闭服务</p>
+</blockquote>
+<ul>
+<li><p>查看服务进程pid</p>
+<pre><code>  ps -ef|grep java（服务名称）
+</code></pre>
+<p>  <img src="/.com//pid.png"></p>
+</li>
+<li><p>关闭服务进程</p>
+<pre><code>  kill -9 pid
+</code></pre>
+</li>
+</ul>
+<h2 id="其他命令"><a href="#其他命令" class="headerlink" title="其他命令"></a>其他命令</h2><blockquote>
+<p>1、<code><strong>df</strong></code> 命令：显示磁盘空间</p>
+<p>2、<code><strong>ip a</strong></code> 命令：检查网络</p>
+</blockquote>
+<blockquote>
+<p>3、<code>ifconfig</code> 命令：查看ip</p>
+</blockquote>
+<blockquote>
+<p>4、top命令：实时显示进程的动态</p>
+</blockquote>
+<blockquote>
+<p>5、free命令：查看系统内存使用情况</p>
+</blockquote>
+<blockquote>
+<p>6、查看系统版本</p>
+</blockquote>
+<p>Ubuntu：</p>
+<ul>
+<li>lsb_release -a： 查看发行版本信息</li>
+<li>lsb_release -cs： 查看Ubuntu发行版的名称</li>
+</ul>
+<p>通用命令：</p>
+<ul>
+<li><p>cat /proc/version： 查看系统信息（包括内核版本）</p>
+</li>
+<li><p>uname -a：查看内核信息</p>
+</li>
+<li><p>uname -r：查看内核版本</p>
+</li>
+<li><p><font color="red">cat /etc/redhat-release</font>：Linux查看当前操作系统发行版信息</p>
+<p>  可以看到线上Linux系统是CentOS release 6.10 (Final)<br>  <img src="/.com//system_version.png"></p>
+</li>
+</ul>
+<blockquote>
+<p>查看系统信息、内存、cpu</p>
+</blockquote>
+<ul>
+<li><p>cat /proc/cpuinfo：Linux查看cpu相关信息，包括型号、主频、内核信息等</p>
+</li>
+<li><p>cat /proc/meminfo：查看RAM使用情况。</p>
+</li>
+</ul>
+<h2 id="系统服务"><a href="#系统服务" class="headerlink" title="系统服务"></a>系统服务</h2><p>例如docker服务</p>
+<ul>
+<li><p>查看服务是否启动：</p>
+<pre><code>  systemctl status docker
+</code></pre>
+</li>
+<li><p>启动服务：</p>
+<pre><code>  sudo systemctl start docker
+</code></pre>
+</li>
+<li><p>重启服务：</p>
+<pre><code>  sudo systemctl restart docker
+</code></pre>
+</li>
+<li><p>设置开机启动：</p>
+<pre><code>  sudo systemctl enable docker
+</code></pre>
+</li>
+<li><p>查看所有服务：</p>
+<pre><code>  service --status-all
+</code></pre>
+</li>
+</ul>
+<h3 id="systemctl-command-not-found"><a href="#systemctl-command-not-found" class="headerlink" title="systemctl command not found"></a>systemctl command not found</h3><p>systemctl  是设置系统服务的命令，它融合之前service和chkconfig的功能于一体。</p>
+<p>centos 6 没有systemctl这个命令，怎么运行服务呢？可以使用service命令替代，如下。跟systemctl不同的是，服务名和子命令位置需要换一下。设置开机启动不一样，用chkconfig。</p>
+<ul>
+<li><p>查看服务是否启动：</p>
+<pre><code>  service jenkins status
+</code></pre>
+</li>
+<li><p>启动服务：</p>
+<pre><code>  service jenkins start
+</code></pre>
+</li>
+</ul>
+<ul>
+<li><p>重启服务：</p>
+<pre><code>  service jenkins restart
+</code></pre>
+</li>
+<li><p>设置开机启动：</p>
+<pre><code>  chkconfig --add jenkins
+
+  chkconfig --add COMMAND 
+  chkconfig COMMAND on/off    重启后永久生效
+</code></pre>
+</li>
+<li><p>查看运行级系统服务</p>
+<pre><code>  chkconfig --list
+</code></pre>
+</li>
+<li><p>删除服务</p>
+<pre><code>  chkconfig --del    jenkins
+</code></pre>
+</li>
+</ul>
+<p>之所以成为服务并且能够开机启动，是因为在 <strong>/lib/systemd/system</strong> 目录下会创建一个 <strong>XXX.service</strong> 的配置文件，里面定义了如何启动、如何关闭。</p>
+<p><img src="/.com//system_service01.png"></p>
+<p><img src="/.com//system_service02.png"></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2021/02/05/linux05/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="谢军">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2021/02/05/linux05/" itemprop="url">linux05/入门/05.linux环境搭建</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-02-05T12:20:33+08:00">
+                2021-02-05
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/linux/" itemprop="url" rel="index">
+                    <span itemprop="name">linux</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2021/02/05/linux05/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2021/02/05/linux05/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2021/02/05/linux05/" class="leancloud_visitors" data-flag-title="linux05/入门/05.linux环境搭建">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="linux环境搭建"><a href="#linux环境搭建" class="headerlink" title="linux环境搭建"></a>linux环境搭建</h1><h2 id="安装VMWare工具"><a href="#安装VMWare工具" class="headerlink" title="安装VMWare工具"></a>安装VMWare工具</h2><p><a href="https://my.vmware.com/en/web/vmware/downloads" target="_blank">下载列表</a>，下载 <a href="https://my.vmware.com/en/web/vmware/info/slug/desktop_end_user_computing/vmware_workstation_pro/15_0" target="_blank">VMware Workstation Pro</a>，选择 <a href="https://my.vmware.com/web/vmware/details?downloadGroup=WKST-1551-WIN&productId=799&rPId=39505" target="_blank">VMware Workstation Pro xx.x.x for Windows</a></p>
+<h2 id="下载linux操作系统的ISO介质"><a href="#下载linux操作系统的ISO介质" class="headerlink" title="下载linux操作系统的ISO介质"></a>下载linux操作系统的ISO介质</h2><p><a href="https://www.linux.org/pages/download/" target="_blank">下载列表</a>：</p>
+<ul>
+<li><p>CentOS</p>
+<ul>
+<li><a href="https://www.centos.org/download/mirrors/" target="_blank">官网镜像列表</a></li>
+<li><a href="http://mirrors.aliyun.com/centos/" target="_blank">阿里云镜像列表</a></li>
+</ul>
+</li>
+<li><p>Unbuntu</p>
+<ul>
+<li><a href="https://ubuntu.com/download/server" target="_blank">服务器版</a></li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>注意：<br>以前CentOS6的 ISO 是有的，现在镜像中找不到了，是官方不对外提供CentOS6了，readme中可以看到：</p>
+</blockquote>
+<pre><code>The whole CentOS 6 is *dead* and *shouldn&#39;t* be used anywhere at *all*
+</code></pre>
+<p>CentOS6确实不好用，不支持Docker容器，CentOS7以上才支持。</p>
+<h2 id="创建linux虚拟机"><a href="#创建linux虚拟机" class="headerlink" title="创建linux虚拟机"></a>创建linux虚拟机</h2><p>大概有如下步骤：</p>
+<ul>
+<li>1.创建新的虚拟机</li>
+<li>2.指定iso系统镜像文件</li>
+<li>3.安装成功后，启动linux系统</li>
+</ul>
+<p>不同版本的linux系统安装，会有细微差别，但大致过程差不多，可以网上参考。</p>
+<h2 id="CentOS-7环境搭建"><a href="#CentOS-7环境搭建" class="headerlink" title="CentOS 7环境搭建"></a>CentOS 7环境搭建</h2><pre><code>镜像版本
+CentOS-7-x86_64-Minimal-2003.iso
+</code></pre>
+<h3 id="network"><a href="#network" class="headerlink" title="network"></a>network</h3><p>CentOS 7 mini版本，默认没有ifconfig，没有ping，联不通外部网络，不能使用yum install安装软件包。首先要解决的就是网络环境问题。</p>
+<ul>
+<li><p>1.首先进入到网络配置文件所在目录</p>
+<pre><code>  cd /etc/sysconfig/network-scripts
+</code></pre>
+<p>  可以看到，有ifcfg-ens33、ifcfg-lo</p>
+</li>
+<li><p>2.修改ifcfg-ens33配置文件</p>
+<pre><code>  vi ifcfg-ens33
+</code></pre>
+<p>  ONBOOT=no 改为 ONBOOT=yes</p>
+</li>
+<li><p>3.重启网络服务</p>
+<pre><code>  systemctl restart network
+  或者
+  service network restart
+</code></pre>
+</li>
+<li><p>4.安装ifconfig、ping等软件包</p>
+<pre><code>  # 先搜索，可以搜索到 net-tools.x86_64
+  yum search ifconfig
+  #net-tools.x86_64 : Basic networking tools
+  
+  # 安装网络工具包（net-tools应该是包含了ifconfig、ping等命令）
+  yum install net-tools.x86_64
+</code></pre>
+<p>  可以查看安装情况，可以看到ifconfig没有，net-tools有</p>
+<pre><code>  rpm -qa|grep ifconfig
+  rpm -qa|grep net_tools
+</code></pre>
+<p>  试一下，ifconfig、ping了，都可以使用了</p>
+<pre><code>  ifconfig
+  ping www.baidu.com
+</code></pre>
+</li>
+</ul>
+<h3 id="base-tool"><a href="#base-tool" class="headerlink" title="base tool"></a>base tool</h3><ul>
+<li><p>1.自带软件</p>
+<ul>
+<li>vi（vim minimal）：文本编辑器</li>
+<li>ssh：有了这个服务，就可以用xshell连接本地的linux系统了，方便操作</li>
+<li>压缩软件： tar，bzip,bzip2</li>
+<li>防火墙： iptables、firewalld</li>
+<li>服务命令： systemctl</li>
+</ul>
+</li>
+<li><p>2.其他工具软件</p>
+<ul>
+<li><p>zip、unzip</p>
+<p>  Linux 下面默认会有 tar 程序。如果是解压缩 zip 包，就需要另行安装。</p>
+<pre><code>  yum install zip.x86_64 unzip.x86_64
+  apt-get install zip unzip
+</code></pre>
+</li>
+<li><p>vim：文本编辑器</p>
+<p>  更加友好的 vim。需要另行安装。字体颜色（注释、key、value各不相同），更易区分</p>
+<pre><code>  yum install vim
+</code></pre>
+</li>
+<li><p>wget：下载工具</p>
+<pre><code>  yum install wget
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<p>其他软件，根据需要自行下载。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2021/02/05/linux04/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="谢军">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2021/02/05/linux04/" itemprop="url">linux04/入门/04.linux常用软件</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-02-05T12:10:33+08:00">
+                2021-02-05
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/linux/" itemprop="url" rel="index">
+                    <span itemprop="name">linux</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2021/02/05/linux04/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2021/02/05/linux04/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2021/02/05/linux04/" class="leancloud_visitors" data-flag-title="linux04/入门/04.linux常用软件">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="linux常用软件"><a href="#linux常用软件" class="headerlink" title="linux常用软件"></a>linux常用软件</h1><h2 id="vim"><a href="#vim" class="headerlink" title="vim"></a>vim</h2><p>linux系统的文本编辑器（linux中一切皆文件，所以这个编辑器很重要）</p>
+<ul>
+<li>进入文件：vi / vim filename </li>
+<li>退出文件：<ul>
+<li>**:**w    保存 </li>
+<li>**:**q    退出</li>
+<li>**:**wq    保存并退出</li>
+<li>**:**q!    不保存退出</li>
+</ul>
+</li>
+</ul>
+<p>三种模式：</p>
+<p><img src="/.com//vim-vi-workmodel.png"></p>
+<ul>
+<li><p>命令模式</p>
+<ul>
+<li>vi / vim filename</li>
+<li>ESC键</li>
+<li>回车</li>
+</ul>
+</li>
+<li><p>输入模式</p>
+<ul>
+<li>输入 i/a/o 进入输入模式</li>
+</ul>
+</li>
+<li><p>底线命令模式</p>
+<ul>
+<li>输入 <strong>:</strong> 进入底线命令模式</li>
+</ul>
+</li>
+</ul>
+<h2 id="openssh-server"><a href="#openssh-server" class="headerlink" title="openssh-server"></a>openssh-server</h2><ol>
+<li><p>安装ssh服务端</p>
+<p> sudo apt-get install openssh-server</p>
+</li>
+<li><p>确认ssh-server是否启动</p>
+<p> ps -e | grep ssh</p>
+<p> 如果只有ssh-agent那ssh-server还没有启动，需要/etc/init.d/ssh start，如果看到sshd那说明ssh-server已经启动了</p>
+<p> <img src="/.com//ssh01.png"></p>
+</li>
+<li><p>启动ssh-server</p>
+<p> /etc/init.d/ssh start</p>
+</li>
+<li><p>SSH配置（<font color="blue">如果需要</font>）</p>
+<p> 修改配置文件/etc/ssh/sshd_config，这里可以定义SSH的服务端口，默认端口是22，你可以自己定义成其他端口号如32，然后重启服务</p>
+</li>
+<li><p>重启ssh-server</p>
+<p> /etc/init.d/ssh restart</p>
+</li>
+</ol>
+<h3 id="使用xshell连接本地linux虚拟机"><a href="#使用xshell连接本地linux虚拟机" class="headerlink" title="使用xshell连接本地linux虚拟机"></a>使用xshell连接本地linux虚拟机</h3><ul>
+<li><p>1.安装openssh-server，并启动</p>
+<p>  本地linux虚拟机安装好ssh服务端，并启动ssh-server后，我们就可以使用xshell来连接本地的linux虚拟机了。</p>
+</li>
+<li><p>2.使用xshell连接linux虚拟机</p>
+<p>  linux虚拟机ip 通过ifconfig命令查看，端口是默认的22，用户名/密码就是登录linux系统的账号密码。</p>
+<ul>
+<li><p>2.1 查看ip，ifconfig</p>
+<p>  <img src="/.com//ssh02.png"></p>
+<p>  可以在windows/cmd命令窗口ping一下这个ip，验证一下是否能ping通，能ping通，说明本机可达虚拟机系统。</p>
+<p>  <img src="/.com//ssh03.png"></p>
+</li>
+<li><p>2.2 xshell中输入相关信息，连接本地linux虚拟机</p>
+<p>  <img src="/.com//ssh04.png"></p>
+<p>  <img src="/.com//ssh05.png"></p>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p>连接成功</p>
+<p>  <img src="/.com//ssh06.png"></p>
+</li>
+</ul>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2021/02/05/linux03/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="谢军">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2021/02/05/linux03/" itemprop="url">linux03/入门/03.linux软件管理</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-02-05T12:00:33+08:00">
+                2021-02-05
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/linux/" itemprop="url" rel="index">
+                    <span itemprop="name">linux</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2021/02/05/linux03/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2021/02/05/linux03/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2021/02/05/linux03/" class="leancloud_visitors" data-flag-title="linux03/入门/03.linux软件管理">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="linux软件管理"><a href="#linux软件管理" class="headerlink" title="linux软件管理"></a>linux软件管理</h1><p>对于 Windows 系统，</p>
+<ul>
+<li>最方便的方式就是下载 .exe 安装文件，然后双击安装即可。</li>
+<li>第二种方式就是通过软件管家安装。</li>
+<li>第三种方式就是将安装好的压缩包，直接解压缩，再配置环境变量。</li>
+</ul>
+<p>对于 Linux 系统，也提供了三种安装方式：</p>
+<h2 id="①-先下载再安装（使用软件包管理工具：rpm、dpkg进行安装）；"><a href="#①-先下载再安装（使用软件包管理工具：rpm、dpkg进行安装）；" class="headerlink" title="① 先下载再安装（使用软件包管理工具：rpm、dpkg进行安装）；"></a><font color="red">① 先下载再安装</font>（使用软件包管理工具：rpm、dpkg进行安装）；</h2><p>Linux也是类似的方法，你可以下载 .rpm 或者 .deb 文件，然后安装。这是Linux系统下的两种安装包，<strong>对应Linux的两大体系</strong>，CentOS、Ubuntu，前者使用rpm，后者使用deb。</p>
+<p>第一种方式<font color="blue">可以用来安装你自己下载的软件包</font></p>
+<ul>
+<li><p>CentOS ：</p>
+<pre><code>  rpm -i file.rpm
+</code></pre>
+</li>
+<li><p>（Debian）Ubuntu ：</p>
+<pre><code>  dpkg -i file.deb 
+</code></pre>
+</li>
+</ul>
+<h3 id="rpm、dpkg其他命令"><a href="#rpm、dpkg其他命令" class="headerlink" title="rpm、dpkg其他命令"></a>rpm、dpkg其他命令</h3><ul>
+<li><p>查看安装的软件列表:</p>
+<p>  linux下，使用如下命令：</p>
+<pre><code>  rpm -qa 
+  dpkg -l（等价于dpkg --list）
+</code></pre>
+<p>  -q 就是 query，a 就是 all，-l 就是 list。</p>
+</li>
+</ul>
+<p>这就跟window下，通过控制面板查看一样：</p>
+<p><img src="/.com//rpm_dpkg01.png"></p>
+<ul>
+<li><p>查看是否安装了某软件：</p>
+<pre><code>  rpm -qa |grep &quot;关键词&quot;
+  dpkg -l |grep &quot;关键词&quot;
+</code></pre>
+<p>  |是管道，grep是搜索工具，将list结果通过|管道输入到grep中搜索，””可以省略，例如： dpkg -l |grep vim</p>
+</li>
+</ul>
+<h2 id="②-通过软件管家（yum、apt-get）进行安装。"><a href="#②-通过软件管家（yum、apt-get）进行安装。" class="headerlink" title="② 通过软件管家（yum、apt-get）进行安装。"></a><font color="red">② 通过软件管家（yum、apt-get）进行安装</font>。</h2><p>第二种安装方式，通过软件管家从软件仓库中获取软件。</p>
+<ul>
+<li><p>CentOS 下使用 yum：</p>
+<pre><code>  //安装
+  yum install java-11-openjdk.x86_64
+  //卸载
+  yum erase java-11-openjdk.x86_64
+  
+</code></pre>
+</li>
+<li><p>Ubuntu 下使用 apt-get：</p>
+<pre><code>  //安装
+  apt-get install openjdk-8-jdk
+  //卸载
+  apt-get purge openjdk-8-jdk
+</code></pre>
+</li>
+</ul>
+<p>Linux 允许我们配置从哪里下载软件，地点就在配置文件里面。<br>先配置远程仓库索引地址，再使用命令 “apt-get update” 更新仓库包索引。</p>
+<p><font color="orange">使用 “apt-get update” 命令时，就会从“/etc/apt/sources.list”中配置的远程仓库检索，然后重新从源仓库中同步文件索引</font>（即软件包索引）。</p>
+<ul>
+<li><p>CentOS，配置文件在/etc/yum.repos.d/CentOS-Base.repo里。</p>
+</li>
+<li><p>Ubuntu，配置文件在/etc/apt/sources.list里。</p>
+</li>
+</ul>
+<h2 id="③-下载安装好的压缩包，直接解压缩（一切皆文件）"><a href="#③-下载安装好的压缩包，直接解压缩（一切皆文件）" class="headerlink" title="③ 下载安装好的压缩包，直接解压缩（一切皆文件）"></a><font color="red">③ 下载安装好的压缩包，直接解压缩（一切皆文件）</font></h2><p>linux系统中，一切皆文件。</p>
+<p>所以，无论是哪种方式进行安装，都是下载一些文件，然后将这些文件放在某个路径下，然后在相应的配置文件中配置一下。</p>
+<p>这些文件在Linux中放的散一些：</p>
+<ul>
+<li>主执行文件会放在 /usr/bin 或者 /usr/sbin 下面；</li>
+<li>其他的库文件会放在 /var 下面；</li>
+<li>配置文件会放在 /etc 下面。</li>
+</ul>
+<p>所以还有一种简单粗暴的方法：就是将安装好的压缩包路径直接下载下来，然后解压缩成为一个整的路径。</p>
+<p>例如 JDK 的安装包：</p>
+<p><img src="/.com//file01.png"></p>
+<ul>
+<li>windows有xx_bin.zip，这是 Windows 下常用的压缩模式；</li>
+<li>Linux有_bin.tar.gz，这是 Linux 下常用的压缩模式。</li>
+</ul>
+<h3 id="如何下载压缩文件呢？"><a href="#如何下载压缩文件呢？" class="headerlink" title="如何下载压缩文件呢？"></a><font color="red">如何下载压缩文件呢？</font></h3><p>Linux 上面有一个工具 wget，后面加上链接，就能从网上下载了。</p>
+<h3 id="解压缩"><a href="#解压缩" class="headerlink" title="解压缩"></a>解压缩</h3><p>下载下来后，我们就可以进行解压缩了。Linux 下面默认会有 tar 程序。如果是解压缩 zip 包，就需要另行安装。</p>
+<pre><code>yum install zip.x86_64 unzip.x86_64
+apt-get install zip unzip
+</code></pre>
+<p>如果是 tar.gz 这种格式的，通过 <strong>tar xvzf</strong> jdk-XXX_linux-x64_bin**.tar.gz** 就可以解压缩了。</p>
+<h3 id="配置环境变量"><a href="#配置环境变量" class="headerlink" title="配置环境变量"></a>配置环境变量</h3><p>对于 Windows 上 jdk 的安装，如果采取这种下载压缩包的格式，<strong>需要配置环境变量</strong>，设置JAVA_HOME和PATH。</p>
+<p><img src="/.com//env01.png"></p>
+<p>在 Linux 也是一样的，通过 tar 解压缩之后，也需要配置环境变量，可以通过 export 命令来配置。</p>
+<pre><code>export JAVA_HOME=/root/jdk-XXX_linux-x64
+export PATH=$JAVA_HOME/bin:$PATH
+</code></pre>
+<p>不过，export 命令仅在当前命令行的会话中管用。一旦退出重新登录，就不管用了。如何像 Windows 里面可以配置永远管用呢？</p>
+<p>在当前用户的默认工作目录，例如 /root 或者 /home/cliu8 下面，有一个.bashrc 文件，这个文件是以点开头的，这个文件默认看不到，需要 ls -la 才能看到，a 就是 all。每次登录的时候，这个文件都会运行，因而把它放在这里。这样登录进来就会自动执行。当然也可以通过 source .bashrc 手动执行。</p>
+<p>要编辑.bashrc 文件，可以使用文本编辑器 vi，也可以使用更加友好的 vim。需要另行安装。</p>
+<pre><code>yum install vim
+apt-get install vim
+</code></pre>
+<h2 id="运行程序"><a href="#运行程序" class="headerlink" title="运行程序"></a>运行程序</h2><p>Windows 下的程序，如果后缀名是 exe，双击就可以运行了。</p>
+<h3 id="linux程序执行条件"><a href="#linux程序执行条件" class="headerlink" title="linux程序执行条件"></a>linux程序执行条件</h3><p>Linux 不是根据后缀名来执行的。它的执行条件是这样的：<strong>只要文件有 x 执行权限</strong>，都能到文件所在的目录下，通过<font color="orange"> <strong>./filename</strong></font> 运行这个程序。（如果放在 PATH 里设置的路径下面，就不用 <strong>./</strong> 了，直接输入文件名就可以运行了，Linux 会帮你找。）</p>
+<h3 id="①-在交互命令行里面运行"><a href="#①-在交互命令行里面运行" class="headerlink" title="① 在交互命令行里面运行"></a>① 在交互命令行里面运行</h3><p>这是<strong>Linux 执行程序最常用的一种方式，通过 shell 在交互命令行里面运行</strong>。</p>
+<p>这样执行的程序可能需要和用户进行交互，这种方式比较适合运行一些简单的命令，缺点是，一旦当前的交互命令行退出，程序就停止运行了。</p>
+<h3 id="②-后台运行"><a href="#②-后台运行" class="headerlink" title="② 后台运行"></a>② 后台运行</h3><p>于是，就有了 <strong>Linux 运行程序的第二种方式，后台运行</strong>。</p>
+<ul>
+<li><p>这个时候，我们往往使用<font color="orange"> nohup </font>命令。意思是 no hang up（不挂起），也就是说，当前交互命令行退出的时候，程序还要在。</p>
+</li>
+<li><p>当然这个时候，程序不能霸占交互命令行，而是应该在后台运行。最后加一个<font color="orange"> &amp; </font>，就表示后台运行。</p>
+</li>
+<li><p>另外一个要处理的就是输出，原来什么都打印在交互命令行里，现在在后台运行了，输出到哪里呢？输出到文件是最好的。</p>
+</li>
+</ul>
+<p>最终命令的一般形式为：<font color="orange">nohup command &gt;out.file 2&gt;&amp;1 &amp;</font></p>
+<pre><code>“1”表示文件描述符 1，表示标准输出，“2”表示文件描述符 2，意思是标准错误输出，
+“2&gt;&amp;1”表示标准输出和错误输出合并了。合并到哪里去呢？到 out.file 里。
+</code></pre>
+<h3 id="进程如何关闭呢？"><a href="#进程如何关闭呢？" class="headerlink" title="进程如何关闭呢？"></a>进程如何关闭呢？</h3><p>假设启动的程序包含某个关键字，那就可以使用下面的命令。</p>
+<pre><code>ps -ef |grep 关键字  |awk &#39;&#123;print $2&#125;&#39;|xargs kill -9
+</code></pre>
+<p>其中 ps -ef 可以单独执行，列出所有正在运行的程序，grep 通过关键字找到启动的程序。</p>
+<p>awk 工具可以很灵活地对文本进行处理，这里的 awk ‘{print $2}’是指第二列的内容，是运行的程序 ID。我们可以通过 xargs 传递给 kill -9，也就是发给这个运行的程序一个信号，让它关闭。如果你已经知道运行的程序 ID，可以直接使用 kill 关闭运行的程序。</p>
+<h3 id="③-以服务的方式运行"><a href="#③-以服务的方式运行" class="headerlink" title="③ 以服务的方式运行"></a>③ 以服务的方式运行</h3><p>在 Windows 里面还有一种程序，称为服务。这是系统启动的时候就在的，我们可以通过控制面板的服务管理启动和关闭它。</p>
+<p><img src="/.com//run01.png"></p>
+<p>Linux 也有相应的服务，这就是<strong>Linux程序运行的第三种方式，以服务的方式运行</strong>。 </p>
+<p>例如常用的数据库 MySQL，就可以使用这种方式运行。</p>
+<ul>
+<li><p>在 Ubuntu 中，安装 MySQL</p>
+<pre><code>  apt-get install mysql-server
+</code></pre>
+</li>
+<li><p>启动 MySQL</p>
+<pre><code>  systemctl start mysql
+</code></pre>
+</li>
+<li><p>设置开机启动</p>
+<pre><code>  systemctl enable mysql
+</code></pre>
+</li>
+</ul>
+<p>之所以成为服务并且能够开机启动，是因为在 <strong>/lib/systemd/system</strong> 目录下会创建一个 <strong>XXX.service</strong> 的配置文件，里面定义了如何启动、如何关闭。</p>
+<p>在 CentOS 里有些特殊，MySQL 被 Oracle 收购后，因为担心授权问题，改为使用 MariaDB，它是 MySQL 的一个分支。</p>
+<ul>
+<li><p>在 CentOS 中，安装MySQL</p>
+<pre><code>  yum install mariadb-server mariadb
+</code></pre>
+</li>
+<li><p>启动MySQL</p>
+<pre><code>  systemctl start mariadb
+</code></pre>
+</li>
+<li><p>设置开机启动</p>
+<pre><code>  systemctl enable mariadb
+</code></pre>
+</li>
+</ul>
+<p>同理，会在 /usr/lib/systemd/system 目录下，创建一个 XXX.service 的配置文件，从而成为一个服务。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2021/02/05/linux02/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="谢军">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2021/02/05/linux02/" itemprop="url">linux02/入门/02.linux系统初步了解</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-02-05T10:30:33+08:00">
+                2021-02-05
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/linux/" itemprop="url" rel="index">
+                    <span itemprop="name">linux</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2021/02/05/linux02/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2021/02/05/linux02/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2021/02/05/linux02/" class="leancloud_visitors" data-flag-title="linux02/入门/02.linux系统初步了解">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="多种linux系统的对比"><a href="#多种linux系统的对比" class="headerlink" title="多种linux系统的对比"></a>多种linux系统的对比</h1><p>linux系统有很多种，比较常用的是CentOS、Debian、Ubuntu，它们都是开源免费。其中，Ubuntu 是从Debian分支出来的。Alpine是一个轻型的Linux，docker镜像用它作为基础镜像，则会非常小。</p>
+<h2 id="CentOS-VS-Ubuntu"><a href="#CentOS-VS-Ubuntu" class="headerlink" title="CentOS VS Ubuntu"></a>CentOS VS Ubuntu</h2><h3 id="观点1：-CentOS适用于服务器，Ubuntu则适用于个人桌面"><a href="#观点1：-CentOS适用于服务器，Ubuntu则适用于个人桌面" class="headerlink" title="观点1： CentOS适用于服务器，Ubuntu则适用于个人桌面"></a>观点1： CentOS适用于服务器，Ubuntu则适用于个人桌面</h3><ul>
+<li><p>CentOS：适用于服务器</p>
+<p>  作为 redhat 社区版本，其稳定性毋庸置疑。在国内的linux 运维环境中， centos 是占大头的。很多公司都是用CentOS来代替商业版的Red Hat Linux。</p>
+</li>
+<li><p>Ubuntu：适用于个人桌面使用</p>
+<p>  Ubuntu的开发目的是为了使个人电脑变得简单易用，Ubuntu 桌面版提供了友好的安装界面，虽然也提供相应的企业服务器，不过专业的还是CentOS。</p>
+</li>
+</ul>
+<h3 id="观点2：-CentOS和Ubuntu平分秋色"><a href="#观点2：-CentOS和Ubuntu平分秋色" class="headerlink" title="观点2： CentOS和Ubuntu平分秋色"></a>观点2： CentOS和Ubuntu平分秋色</h3><p>我们常用linux系统来部署生产环境，所以这里还是比较CentOS和Ubuntu服务器的优劣。</p>
+<ul>
+<li>其实，在国际上，采用 centos 和采用 ubuntu 作为服务端是其实是五五开的，两者各有特色；</li>
+<li>最最重要的差异就是，ubuntu 相比 centos 在更新策略上要积极一些。在 centos 上如果不配置扩展源的话，很多软件都是没办法yum安装的，比如 nginx。而 ubuntu 系统，就没有这个烦恼啦，直接 apt install nginx 就可以咯！</li>
+</ul>
+<p>总结就是，用于服务器上的话，如果你希望更加容易的获得较新版本的软件，使用 ubuntu 系统可能会更加方便一些。当然，如果保守一些，希望稳定一些，还是选择 centos 靠谱。</p>
+<h2 id="Alpine-Linux"><a href="#Alpine-Linux" class="headerlink" title="Alpine Linux"></a>Alpine Linux</h2><blockquote>
+<p>Small. Simple. Secure.</p>
+</blockquote>
+<blockquote>
+<p>Alpine Linux is a security-oriented, lightweight Linux distribution based on musl libc and busybox</p>
+</blockquote>
+<blockquote>
+<p>Alpine Linux是一个面向安全的轻型的Linux发行版。</p>
+</blockquote>
+<blockquote>
+<p>Alpine Linux采用了 musl libc 和 busybox以减小系统的体积和运行时资源消耗。</p>
+</blockquote>
+<blockquote>
+<p>在保持瘦身的同时，Alpine Linux还提供了自己的包管理工具apk。</p>
+</blockquote>
+<blockquote>
+<p>关键的是，相比于其他Linux的Docker镜像，它的容量非常小，仅仅只有5MB。</p>
+</blockquote>
+<p>例如，elasticsearch-head的docker镜像，5-alpine就是用Alpine Linux作为基础镜像</p>
+<pre><code>docker pull mobz/elasticsearch-head:5-alpine
+
+docker pull mobz/elasticsearch-head:5
+</code></pre>
+<p><img src="/.com//alpine01.png"><br><img src="/.com//alpine02.png"></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2021/02/04/linux01/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="谢军">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2021/02/04/linux01/" itemprop="url">linux01/入门/01.linux学习路径</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-02-04T17:30:33+08:00">
+                2021-02-04
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/linux/" itemprop="url" rel="index">
+                    <span itemprop="name">linux</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2021/02/04/linux01/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2021/02/04/linux01/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2021/02/04/linux01/" class="leancloud_visitors" data-flag-title="linux01/入门/01.linux学习路径">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="linux学习路径"><a href="#linux学习路径" class="headerlink" title="linux学习路径"></a>linux学习路径</h1><p>可能你刚刚上手linux的时候，你基本是这也找不着，那也找不着，觉得 Linux 十分难用，从而“从入门到放弃”。甚至你连linux环境都不会搭建。</p>
+<p>Linux 上手难，学习曲线陡峭，它的学习过程更像一个<strong>爬坡模式</strong>。这些坡看起来都很陡，但是一旦爬上一阶，就会一马平川。</p>
+<p>linux入门难，我也吃过这种苦，所以，我把学习linux操作系统的经验总结了下，希望能帮助到你入门。</p>
+<p><img src="/.com//learn_path.png"></p>
+<p>linux要成为大牛，大概要爬六个坡，不过对我们一般人来说，爬上第一个坡，“<strong>熟悉linux命令</strong>” + “<strong>实践</strong>”就够用了，深入的话，可以了解一些感兴趣的linux内核机制，比如CFS调度策略。</p>
+<blockquote>
+<p>先来看看第一个坡：</p>
+</blockquote>
+<p>上手 Linux 的第一步，要先从 Windows 的思维习惯，切换成 Linux 的“<strong>命令行</strong> + <strong>文件</strong>”使用模式。</p>
+<p>爬第一个坡的阶段，就是要熟练使用linux命令行，熟练大概就是你对要用什么命令心里有数，命令的意思你能搞懂。基本的常用命令你都会用，对于有的命令最好是掌握深入一点，比如“ | grep”是什么意思，修改文件权限的时候“chmod 777 file”，chmod后面的数字是什么意思。</p>
+<p>有可能连linux环境都没有，所以，会需要自己搭建一个linux操作系统。多是在本地windows系统下安装一个VMware虚拟机管理软件，在VMware中搭建一个linux系统（虚拟机），操作系统弄好后还会需要安装一些你需要的软件。这个过程中间会遇到很多问题，这些问题大多都可以去网上找到解决办法。这个过程我后面也有记录，可以参考借鉴。</p>
+<p>在搭建linux系统环境之前，可以先对linux多了解了解，比如几大常用的linux系统CentOS、Ubuntu有何区别，常用的命令，常用的工具软件等。再搭建linux，然后再多操作、熟练使用linux命令。</p>
+<p>这个过程可能非常痛苦，也不必急于求成一口吃一个胖子，慢慢来，只要你坚持下去，你就会爬上第一个坡了。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2021/01/29/hexo-other-error/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="谢军">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2021/01/29/hexo-other-error/" itemprop="url">博客08/hexo/6.hexo其他问题</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-01-29T22:55:33+08:00">
+                2021-01-29
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%8D%9A%E5%AE%A2/" itemprop="url" rel="index">
+                    <span itemprop="name">博客</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2021/01/29/hexo-other-error/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2021/01/29/hexo-other-error/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2021/01/29/hexo-other-error/" class="leancloud_visitors" data-flag-title="博客08/hexo/6.hexo其他问题">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="hexo更新问题"><a href="#hexo更新问题" class="headerlink" title="hexo更新问题"></a>hexo更新问题</h2><blockquote>
+<p>1.<strong>hexo使用主题theme</strong> </p>
+</blockquote>
+<pre><code>出现“ &#123;% extends ‘_layout.swig‘ %&#125; &#123;% import ‘_macro/post.swig‘ as post_template %&#125;“问题
+</code></pre>
+<p><img src="/.com//error01.png"></p>
+<p>原因是hexo在5.0之后把swig给删除了需要自己手动安装</p>
+<pre><code>npm i hexo-renderer-swig
+</code></pre>
+<blockquote>
+<p>2.hexo，点首页、标签、分类等菜单的时候，显示…%20</p>
+</blockquote>
+<pre><code>Cannot GET /categories/%20
+</code></pre>
+<p>hexo更新后格式要求更严格了，主题相关配置||之前空格需要去掉。</p>
+<p>例如</p>
+<pre><code>home: / || home
+</code></pre>
+<p>改为</p>
+<pre><code>home: /|| home
+</code></pre>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+  </section>
+
+  
+  <nav class="pagination">
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/2/">&lt;i class&#x3D;&quot;fa fa-angle-right&quot;&gt;&lt;&#x2F;i&gt;</a>
+  </nav>
+
+
+
+          </div>
+          
+
+
+          
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/uploads/avatar.png"
+                alt="谢军" />
+            
+              <p class="site-author-name" itemprop="name">谢军</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/%7C%7C%20archive">
+              
+                  <span class="site-state-item-count">37</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">8</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">15</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/sgven" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="http://weibo.com/sgven" target="_blank" title="微博">
+                      
+                        <i class="fa fa-fw fa-weibo"></i>微博</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">谢军</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      <i class="fa fa-user">本站访客数:</i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      
+    </span>
+  
+
+  
+</div>
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/three/three.min.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/three/three-waves.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'y9dYvngbuUN1Fgu6UMNlq1G9-gzGzoHsz',
+        appKey: 'IBj5xiuJ5XsgC08nIgps1EmC',
+        placeholder: 'Just go go',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+  <script>AV.initialize("xgUpeENo7gDDAxCFBwVK3kFM-gzGzoHsz", "IctyJn3v5jERlkRV73Atz3ly");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

@@ -1,0 +1,1589 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="SpringBoot," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="springBoot入门指南官网指南 需要什么 JDK 1.8 or later Gradle 4+ or Maven 3.2+ you can also import demo code into your IDE: IntelliJ IDEA    创建SpringBoot工程 or 下载(demo)： 可以在官网https:&#x2F;&#x2F;start.spring.io&#x2F; 生成工程(可在界面中自行选择依">
+<meta property="og:type" content="article">
+<meta property="og:title" content="SpringBoot&#x2F;01.入门指南">
+<meta property="og:url" content="http://yoursite.com/2019/04/15/springboot01-guide/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="springBoot入门指南官网指南 需要什么 JDK 1.8 or later Gradle 4+ or Maven 3.2+ you can also import demo code into your IDE: IntelliJ IDEA    创建SpringBoot工程 or 下载(demo)： 可以在官网https:&#x2F;&#x2F;start.spring.io&#x2F; 生成工程(可在界面中自行选择依">
+<meta property="og:locale">
+<meta property="og:image" content="http://yoursite.com/.com//springboot_run01.png">
+<meta property="og:image" content="http://yoursite.com/.com//springboot_run02.png">
+<meta property="og:image" content="http://yoursite.com/.com//springboot_dependency.png">
+<meta property="og:image" content="http://yoursite.com/.com//default_package_error01.png">
+<meta property="og:image" content="http://yoursite.com/.com//default_package_error02.png">
+<meta property="article:published_time" content="2019-04-14T17:00:00.000Z">
+<meta property="article:modified_time" content="2019-04-19T08:57:40.008Z">
+<meta property="article:author" content="谢军">
+<meta property="article:tag" content="SpringBoot">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://yoursite.com/.com//springboot_run01.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2019/04/15/springboot01-guide/"/>
+
+
+
+
+
+  <title>SpringBoot/01.入门指南 | Hexo</title>
+  
+
+
+
+
+
+
+
+
+<meta name="generator" content="Hexo 5.3.0"></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Hexo</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/15/springboot01-guide/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="谢军">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">SpringBoot/01.入门指南</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-04-15T01:00:00+08:00">
+                2019-04-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%BC%80%E6%BA%90%E6%A1%86%E6%9E%B6/" itemprop="url" rel="index">
+                    <span itemprop="name">开源框架</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/04/15/springboot01-guide/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/04/15/springboot01-guide/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2019/04/15/springboot01-guide/" class="leancloud_visitors" data-flag-title="SpringBoot/01.入门指南">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="springBoot入门指南"><a href="#springBoot入门指南" class="headerlink" title="springBoot入门指南"></a>springBoot入门指南</h1><p><a target="_Blank" href="https://spring.io/guides/gs/spring-boot/">官网指南</a></p>
+<h2 id="需要什么"><a href="#需要什么" class="headerlink" title="需要什么"></a>需要什么</h2><ul>
+<li>JDK 1.8 or later</li>
+<li>Gradle 4+ or Maven 3.2+</li>
+<li>you can also import demo code into your IDE:<ul>
+<li>IntelliJ IDEA</li>
+</ul>
+</li>
+</ul>
+<h2 id="创建SpringBoot工程-or-下载-demo-："><a href="#创建SpringBoot工程-or-下载-demo-：" class="headerlink" title="创建SpringBoot工程 or 下载(demo)："></a>创建SpringBoot工程 or 下载(demo)：</h2><ul>
+<li>可以在官网<a target="_Blank" href="https://start.spring.io/">https://start.spring.io/</a> 生成工程(可在界面中自行选择依赖)</li>
+<li>or 在你的workspace目录下 通过git clone下载demo<pre><code>  git clone https://github.com/spring-guides/gs-spring-boot.git
+</code></pre>
+</li>
+</ul>
+<h2 id="构建-使用Maven，构建demo-："><a href="#构建-使用Maven，构建demo-：" class="headerlink" title="构建(使用Maven，构建demo)："></a>构建(使用Maven，构建demo)：</h2><p>在IDEA中，右键pom.xml，Add as Maven Project。等待下载好maven依赖。</p>
+<h2 id="运行应用程序-使用Maven，运行demo-："><a href="#运行应用程序-使用Maven，运行demo-：" class="headerlink" title="运行应用程序(使用Maven，运行demo)："></a>运行应用程序(使用Maven，运行demo)：</h2><h3 id="使用Maven、Jar运行SpringBoot"><a href="#使用Maven、Jar运行SpringBoot" class="headerlink" title="使用Maven、Jar运行SpringBoot"></a>使用Maven、Jar运行SpringBoot</h3><pre><code>mvn package &amp;&amp; java -jar target / gs-spring-boot-0.1.0.jar
+</code></pre>
+<p><font color="red">注意</font>：</p>
+<ul>
+<li><p>1.如果碰到<font color="red">错误: 找不到或无法加载主类 com.example.demo.DemoApplication</font>，需要在第一次运行SpringBoot时，执行上面的命令，来启动SpringBoot：</p>
+</li>
+<li><p>2.还需要注意，如果代码做了修改，需要再次执行上面的命令<font color="red"><strong>进行编译</strong></font>，不然改动不会生效。(不注意这个的话，可能你会一时摸不着头脑，通过@SpringBootApplication的类的main方法启动，程序能正常跑起来，怎么改动就是没生效呢)</p>
+</li>
+</ul>
+<p>执行上面命令，可以看到这样的输出：</p>
+<pre><code>Let&#39;s inspect the beans provided by Spring Boot:
+application
+beanNameHandlerMapping
+defaultServletHandlerMapping
+dispatcherServlet
+embeddedServletContainerCustomizerBeanPostProcessor
+handlerExceptionResolver
+helloController
+httpRequestHandlerAdapter
+messageSource
+mvcContentNegotiationManager
+mvcConversionService
+mvcValidator
+org.springframework.boot.autoconfigure.MessageSourceAutoConfiguration
+org.springframework.boot.autoconfigure.PropertyPlaceholderAutoConfiguration
+org.springframework.boot.autoconfigure.web.EmbeddedServletContainerAutoConfiguration
+org.springframework.boot.autoconfigure.web.EmbeddedServletContainerAutoConfiguration$DispatcherServletConfiguration
+org.springframework.boot.autoconfigure.web.EmbeddedServletContainerAutoConfiguration$EmbeddedTomcat
+org.springframework.boot.autoconfigure.web.ServerPropertiesAutoConfiguration
+org.springframework.boot.context.embedded.properties.ServerProperties
+org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor
+org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor
+org.springframework.context.annotation.internalAutowiredAnnotationProcessor
+org.springframework.context.annotation.internalCommonAnnotationProcessor
+org.springframework.context.annotation.internalConfigurationAnnotationProcessor
+org.springframework.context.annotation.internalRequiredAnnotationProcessor
+org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration
+propertySourcesBinder
+propertySourcesPlaceholderConfigurer
+requestMappingHandlerAdapter
+requestMappingHandlerMapping
+resourceHandlerMapping
+simpleControllerHandlerAdapter
+tomcatEmbeddedServletContainerFactory
+viewControllerHandlerMapping
+</code></pre>
+<p>执行完上面命令后，下次就可以在IDEA中直接执行Application类了。</p>
+<h3 id="使用Groovy、SpringBoot’s-CLI运行SpringBoot"><a href="#使用Groovy、SpringBoot’s-CLI运行SpringBoot" class="headerlink" title="使用Groovy、SpringBoot’s CLI运行SpringBoot"></a>使用Groovy、SpringBoot’s CLI运行SpringBoot</h3><p>Spring Boot还支持Groovy，允许您使用一个文件构建Spring MVC Web应用程序</p>
+<p>官网：</p>
+<p>Spring Boot also has Groovy support, allowing you to build Spring MVC web apps with as little as a single file.</p>
+<ul>
+<li><p>1.创建一个名为app.groovy的新文件，并在其中添加以下代码：</p>
+<pre><code>  @RestController
+  class ThisWillActuallyRun &#123;
+  
+      @RequestMapping(&quot;/&quot;)
+      String home() &#123;
+          return &quot;Hello World!&quot;
+      &#125;
+  
+  &#125;
+</code></pre>
+<p>  文件的位置无关紧要。</p>
+</li>
+<li><p>2.安装Spring Boot的<a target="_Blank" href="https://docs.spring.io/spring-boot/docs/2.0.5.RELEASE/reference/htmlsingle/#getting-started-installing-the-cli">CLI</a></p>
+<ul>
+<li><p>给本地Maven仓库下载groovy依赖，pom.xml中添加如下依赖：</p>
+<pre><code>  &lt;!-- groovy --&gt;
+  &lt;dependency&gt;
+      &lt;groupId&gt;org.codehaus.groovy&lt;/groupId&gt;
+      &lt;artifactId&gt;groovy-all&lt;/artifactId&gt;
+      &lt;version&gt;2.4.15&lt;/version&gt;
+  &lt;/dependency&gt;
+</code></pre>
+</li>
+<li><p>运行如下：</p>
+<pre><code>  spring run app.groovy
+</code></pre>
+</li>
+<li><p>进入：<a target="_Blank" href="http://localhost:8080/">http://localhost:8080/</a>，显示：</p>
+<pre><code>  Hello World!
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="通过maven命令运行SpringBoot"><a href="#通过maven命令运行SpringBoot" class="headerlink" title="通过maven命令运行SpringBoot"></a>通过maven命令运行SpringBoot</h3><p>因为POM使用了spring-boot-starter-parent，所以可以用 <code>run</code> 来启动应用程序。从项目根目录中键入 <code>mvn spring-boot:run</code> 以启动应用程序</p>
+<pre><code>mvn spring-boot:run
+</code></pre>
+<p><img src="/.com//springboot_run01.png"><br><img src="/.com//springboot_run02.png"></p>
+<h2 id="从无到有，通过pom-xml，创建SpringBoot工程"><a href="#从无到有，通过pom-xml，创建SpringBoot工程" class="headerlink" title="从无到有，通过pom.xml，创建SpringBoot工程"></a>从无到有，通过pom.xml，创建SpringBoot工程</h2><h3 id="创建pom"><a href="#创建pom" class="headerlink" title="创建pom"></a>创建pom</h3><pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;project xmlns=&quot;http://maven.apache.org/POM/4.0.0&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
+    xsi:schemaLocation=&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;&gt;
+    &lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;
+
+    &lt;groupId&gt;com.example&lt;/groupId&gt;
+    &lt;artifactId&gt;myproject&lt;/artifactId&gt;
+    &lt;version&gt;0.0.1-SNAPSHOT&lt;/version&gt;
+
+    &lt;parent&gt;
+        &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+        &lt;artifactId&gt;spring-boot-starter-parent&lt;/artifactId&gt;
+        &lt;version&gt;2.0.5.RELEASE&lt;/version&gt;
+    &lt;/parent&gt;
+
+    &lt;!-- Additional lines to be added here... --&gt;
+
+&lt;/project&gt;
+</code></pre>
+<h4 id="继承Starter-Parent"><a href="#继承Starter-Parent" class="headerlink" title="继承Starter Parent"></a>继承Starter Parent</h4><p>spring-boot-starter-parent主要作用就是统一管理依赖版本(不实际引入依赖)，引入其他starter不需要指定版本了，避免版本冲突。</p>
+<p><img src="/.com//springboot_dependency.png"><br>可以看到starter-parent的pom中继承自spring-boot-dependencies，然后spring-boot-dependencies中的dependencyManagement维护了所有spring-boot需要的依赖版本。</p>
+<pre><code>&lt;!-- 只需要在此依赖项上指定Spring Boot版本号。如果导入其他启动器，则可以安全地省略版本号 --&gt;
+&lt;parent&gt;
+    &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+    &lt;artifactId&gt;spring-boot-starter-parent&lt;/artifactId&gt;
+    &lt;version&gt;2.0.5.RELEASE&lt;/version&gt;
+&lt;/parent&gt;
+
+&lt;!-- 通过如下设置，来覆盖单个依赖项 --&gt;
+&lt;properties&gt; 
+    &lt;spring-data- releasetrain.version&gt;
+ Fowler-SR2 &lt;/spring-data-releasetrain.version&gt; &lt;/ properties&gt;
+</code></pre>
+<h4 id="不继承starter-parent"><a href="#不继承starter-parent" class="headerlink" title="不继承starter-parent"></a>不继承starter-parent</h4><p>您可能拥有自己需要使用的公司标准父级，或者您可能更愿意明确声明所有Maven配置。</p>
+<p>如果您不想使用 <code>spring-boot-starter-parent</code>，您仍然可以通过使用 <code>scope=import</code> 依赖项来保持依赖项管理的好处，如下所示：</p>
+<p><font color="red">为什么用scope=import</font>，请参考<a target="_Blank" href="https://sgven.github.io/2019/04/15/maven_denpendency/">maven依赖版本统一管理</a>。</p>
+<pre><code>&lt;dependencyManagement&gt;
+        &lt;dependencies&gt;
+        &lt;dependency&gt;
+            &lt;!-- Import dependency management from Spring Boot --&gt;
+            &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+            &lt;artifactId&gt;spring-boot-dependencies&lt;/artifactId&gt;
+            &lt;version&gt;2.0.5.RELEASE&lt;/version&gt;
+            &lt;type&gt;pom&lt;/type&gt;
+            &lt;scope&gt;import&lt;/scope&gt;
+        &lt;/dependency&gt;
+    &lt;/dependencies&gt;
+&lt;/dependencyManagement&gt;
+</code></pre>
+<h3 id="添加依赖"><a href="#添加依赖" class="headerlink" title="添加依赖"></a>添加依赖</h3><p>spring-boot-starter-web添加了Tomcat和Spring MVC </p>
+<pre><code>&lt;dependencies&gt;
+    &lt;dependency&gt;
+        &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+        &lt;artifactId&gt;spring-boot-starter-web&lt;/artifactId&gt;
+    &lt;/dependency&gt;
+&lt;/dependencies&gt;
+</code></pre>
+<h3 id="创建可执行的Jar"><a href="#创建可执行的Jar" class="headerlink" title="创建可执行的Jar"></a>创建可执行的Jar</h3><p>Java没有提供加载<strong>嵌套jar文件</strong>的标准方法（jar文件本身包含在jar中）</p>
+<p><font color="red">注意</font>：要创建可执行jar，需要添加 <code>spring-boot-maven-plugin</code> 到我们的 pom.xml</p>
+<pre><code>&lt;build&gt; 
+    &lt;plugins&gt; 
+        &lt;plugin&gt; 
+            &lt;groupId&gt; org.springframework.boot &lt;/ groupId&gt; 
+            &lt;artifactId&gt; spring-boot-maven-plugin &lt;/ artifactId&gt; 
+        &lt;/ plugin&gt; 
+    &lt;/ plugins&gt; 
+&lt;/ build&gt;
+</code></pre>
+<h3 id="编写代码"><a href="#编写代码" class="headerlink" title="编写代码"></a>编写代码</h3><p>By default，Maven compiles sources from <code>src/main/java</code>，So you need to create a Java file. 最简单的一个示例，<code>src/main/java/Example.java</code>：</p>
+<pre><code>import org.springframework.boot.*;
+import org.springframework.boot.autoconfigure.*;
+import org.springframework.web.bind.annotation.*;
+
+@RestController
+@EnableAutoConfiguration
+public class Example &#123;
+
+    @RequestMapping(&quot;/&quot;)
+    String home() &#123;
+        return &quot;Hello World!&quot;;
+    &#125;
+
+    public static void main(String[] args) throws Exception &#123;
+        SpringApplication.run(Example.class, args);
+    &#125;
+
+&#125;
+</code></pre>
+<h3 id="SpringBoot项目结构"><a href="#SpringBoot项目结构" class="headerlink" title="SpringBoot项目结构"></a>SpringBoot项目结构</h3><p>SpringBoot项目结构的<a target="_Blank" href="https://docs.spring.io/spring-boot/docs/2.0.5.RELEASE/reference/htmlsingle/#using-boot-structuring-your-code">最佳实践</a>：<font color="blue">主应用程序类放在其他类之上的根包中</font>(主类or启动类一般使用@SpringBootApplication注解) 。如下：</p>
+<pre><code>com 
+ +  -  example 
+     +  -  myapplication 
+         +  -  Application.java 
+         | 
+         +  - 客户
+         | +  -  Customer.java 
+         | +  -  CustomerController.java 
+         | +  -  CustomerService.java 
+         | +  -  CustomerRepository.java 
+         | 
+         +  - 订单
+             +  -  Order.java 
+             +  -  OrderController.java 
+             +  -  OrderService.java 
+             +  -  OrderRepository.java
+</code></pre>
+<h4 id="根包"><a href="#根包" class="headerlink" title="根包"></a>根包</h4><p>根包就是放在其他类之上的包。</p>
+<p>Java推荐的包命名约定并使用反向域名（例如，com.example.project通常就是根包）</p>
+<h4 id="默认包"><a href="#默认包" class="headerlink" title="默认包"></a>默认包</h4><p>当一个类不包含package声明时，它被认为是在“默认包”中。</p>
+<ul>
+<li><p>通常不鼓励使用“默认包”，应该避免使用。</p>
+</li>
+<li><p>这可能会导致使用了 @ComponentScan, @EntityScan, or @SpringBootApplication注解的SpringBoot应用程序的特殊问题。</p>
+<p>  例如：<br>  <img src="/.com//default_package_error01.png"><br>  <img src="/.com//default_package_error02.png"></p>
+<pre><code>  ** WARNING ** :Your ApplicationContext is unlikely to start due to a @ComponentScan of the default package.
+
+  due to org/springframework/dao/DataAccessException not found. Make sure your own configuration does not rely on that class. This can also happen if you are @ComponentScanning a springframework package (e.g. if you put a @ComponentScan in the default package by mistake)
+</code></pre>
+<p>可以通过basePackageClasses等属性来细粒度的定制@ComponentScan自动扫描的范围，不指定则默认从声明@ComponentScan所在类的package进行扫描。因为启动类在默认包下，所以默认包下只有启动类DemoApplication加入到Spring的上下文Context中，这样SpringBoot运行还需要的其他的类就找不到了。</p>
+<p>  SpringApplication.run(DemoApplication.class, args);</p>
+</li>
+<li><p>解决办法：</p>
+<ul>
+<li><p>1.显示指定要扫描的包</p>
+<p>  @ComponentScan(basePackageClasses＝{“包名1”,”包名2”})<br>  或者<br>  @SpringBootApplication(scanBasePackages = {“包名1”,”包名2”})</p>
+</li>
+<li><p>2.按SpringBoot的建议，启动类放在根包上。</p>
+</li>
+</ul>
+</li>
+</ul>
+<p>如果想在其他包下引用默认包中的类：<br>比如因为一些历史原因，有的类是放在默认包中，这时其他包中想引用它们。</p>
+<ul>
+<li><p>Java其它包中无法引用缺省包(default package)，因为其它的包如果要调用缺省包中的类,必须插入包名.但是缺省包却无名,所以不能够直接调用。</p>
+<p>  就必须通过反射或其他一些间接方法访问默认包中的类</p>
+</li>
+</ul>
+<h4 id="SpringBootApplication注解"><a href="#SpringBootApplication注解" class="headerlink" title="@SpringBootApplication注解"></a>@SpringBootApplication注解</h4><p>@SpringBootApplication包含下面三个注解：</p>
+<ul>
+<li>@EnableAutoConfiguration：启用Spring Boot的自动配置机制</li>
+<li>@ComponentScan：@Component在应用程序所在的包上启用扫描（请参阅最佳实践）</li>
+<li>@Configuration：允许在上下文中注册额外的bean或导入其他配置类</li>
+</ul>
+<p>可以组合其中单个的注解。如下，没有用@ComponentScan来自动检测@Component注释的类，而是通过@Import显式导入用户定义的bean：</p>
+<pre><code>@Configuration
+@EnableAutoConfiguration
+@Import(&#123; MyConfig.class, MyAnotherConfig.class &#125;)
+public class Application &#123;
+
+    public static void main(String[] args) &#123;
+            SpringApplication.run(Application.class, args);
+    &#125;
+
+&#125;
+</code></pre>
+<h2 id="SpringBoot的IDE——STS"><a href="#SpringBoot的IDE——STS" class="headerlink" title="SpringBoot的IDE——STS"></a>SpringBoot的IDE——STS</h2><p><a target="_Blank" href="https://spring.io/tools3/sts/all">STS下载</a></p>
+<p><a target="_Blank" href="https://docs.spring.io/spring-boot/docs/2.0.5.RELEASE/reference/htmlsingle/">SpringBoot在线文档</a></p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/SpringBoot/" rel="tag"># SpringBoot</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/04/10/redis-02-summary/" rel="next" title="redis/02.redis简介(大致整体了解下)">
+                <i class="fa fa-chevron-left"></i> redis/02.redis简介(大致整体了解下)
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/04/15/maven_denpendency/" rel="prev" title="maven/01.maven依赖版本统一管理">
+                maven/01.maven依赖版本统一管理 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<div class="addthis_inline_share_toolbox">
+  <script type = "text/javascript" src = "//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5b7fe1b4fb273814" async = "async" ></script>
+</div>
+
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/uploads/avatar.png"
+                alt="谢军" />
+            
+              <p class="site-author-name" itemprop="name">谢军</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/%7C%7C%20archive">
+              
+                  <span class="site-state-item-count">37</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">8</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">15</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/sgven" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="http://weibo.com/sgven" target="_blank" title="微博">
+                      
+                        <i class="fa fa-fw fa-weibo"></i>微博</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#springBoot%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97"><span class="nav-number">1.</span> <span class="nav-text">springBoot入门指南</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%9C%80%E8%A6%81%E4%BB%80%E4%B9%88"><span class="nav-number">1.1.</span> <span class="nav-text">需要什么</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%9B%E5%BB%BASpringBoot%E5%B7%A5%E7%A8%8B-or-%E4%B8%8B%E8%BD%BD-demo-%EF%BC%9A"><span class="nav-number">1.2.</span> <span class="nav-text">创建SpringBoot工程 or 下载(demo)：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9E%84%E5%BB%BA-%E4%BD%BF%E7%94%A8Maven%EF%BC%8C%E6%9E%84%E5%BB%BAdemo-%EF%BC%9A"><span class="nav-number">1.3.</span> <span class="nav-text">构建(使用Maven，构建demo)：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BF%90%E8%A1%8C%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F-%E4%BD%BF%E7%94%A8Maven%EF%BC%8C%E8%BF%90%E8%A1%8Cdemo-%EF%BC%9A"><span class="nav-number">1.4.</span> <span class="nav-text">运行应用程序(使用Maven，运行demo)：</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8Maven%E3%80%81Jar%E8%BF%90%E8%A1%8CSpringBoot"><span class="nav-number">1.4.1.</span> <span class="nav-text">使用Maven、Jar运行SpringBoot</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8Groovy%E3%80%81SpringBoot%E2%80%99s-CLI%E8%BF%90%E8%A1%8CSpringBoot"><span class="nav-number">1.4.2.</span> <span class="nav-text">使用Groovy、SpringBoot’s CLI运行SpringBoot</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%80%9A%E8%BF%87maven%E5%91%BD%E4%BB%A4%E8%BF%90%E8%A1%8CSpringBoot"><span class="nav-number">1.4.3.</span> <span class="nav-text">通过maven命令运行SpringBoot</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BB%8E%E6%97%A0%E5%88%B0%E6%9C%89%EF%BC%8C%E9%80%9A%E8%BF%87pom-xml%EF%BC%8C%E5%88%9B%E5%BB%BASpringBoot%E5%B7%A5%E7%A8%8B"><span class="nav-number">1.5.</span> <span class="nav-text">从无到有，通过pom.xml，创建SpringBoot工程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%9B%E5%BB%BApom"><span class="nav-number">1.5.1.</span> <span class="nav-text">创建pom</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%BB%A7%E6%89%BFStarter-Parent"><span class="nav-number">1.5.1.1.</span> <span class="nav-text">继承Starter Parent</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%B8%8D%E7%BB%A7%E6%89%BFstarter-parent"><span class="nav-number">1.5.1.2.</span> <span class="nav-text">不继承starter-parent</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B7%BB%E5%8A%A0%E4%BE%9D%E8%B5%96"><span class="nav-number">1.5.2.</span> <span class="nav-text">添加依赖</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%9B%E5%BB%BA%E5%8F%AF%E6%89%A7%E8%A1%8C%E7%9A%84Jar"><span class="nav-number">1.5.3.</span> <span class="nav-text">创建可执行的Jar</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BC%96%E5%86%99%E4%BB%A3%E7%A0%81"><span class="nav-number">1.5.4.</span> <span class="nav-text">编写代码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#SpringBoot%E9%A1%B9%E7%9B%AE%E7%BB%93%E6%9E%84"><span class="nav-number">1.5.5.</span> <span class="nav-text">SpringBoot项目结构</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%A0%B9%E5%8C%85"><span class="nav-number">1.5.5.1.</span> <span class="nav-text">根包</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%BB%98%E8%AE%A4%E5%8C%85"><span class="nav-number">1.5.5.2.</span> <span class="nav-text">默认包</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#SpringBootApplication%E6%B3%A8%E8%A7%A3"><span class="nav-number">1.5.5.3.</span> <span class="nav-text">@SpringBootApplication注解</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#SpringBoot%E7%9A%84IDE%E2%80%94%E2%80%94STS"><span class="nav-number">1.6.</span> <span class="nav-text">SpringBoot的IDE——STS</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">谢军</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      <i class="fa fa-user">本站访客数:</i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      
+    </span>
+  
+
+  
+</div>
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/three/three.min.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/three/three-waves.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'y9dYvngbuUN1Fgu6UMNlq1G9-gzGzoHsz',
+        appKey: 'IBj5xiuJ5XsgC08nIgps1EmC',
+        placeholder: 'Just go go',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+  <script>AV.initialize("xgUpeENo7gDDAxCFBwVK3kFM-gzGzoHsz", "IctyJn3v5jERlkRV73Atz3ly");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
